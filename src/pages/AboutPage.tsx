@@ -1,0 +1,104 @@
+import SEO from "@/components/SEO";
+import PageHero from "@/components/PageHero";
+import SectionHeading from "@/components/SectionHeading";
+import Reveal from "@/components/Reveal";
+import NumberCounter from "@/components/NumberCounter";
+import CTASection from "@/components/CTASection";
+import { img } from "@/data/images";
+
+const values = [
+  { title: "Integrity in Sourcing", description: "We work directly with quarries and manufacturers, so what you see is what gets delivered." },
+  { title: "Craft Over Shortcuts", description: "Every slab is checked for consistency before it reaches a client's project." },
+  { title: "Design-Led Guidance", description: "Our specialists think in terms of light, use and longevity — not just catalogue pages." },
+  { title: "Long-Term Relationships", description: "Many of our clients are architects and builders who return, project after project." },
+];
+
+const stats = [
+  { value: 18, suffix: "+", label: "Years in Business" },
+  { value: 4200, suffix: "+", label: "Projects Delivered" },
+  { value: 60, suffix: "+", label: "Surface Collections" },
+  { value: 98, suffix: "%", label: "Client Satisfaction" },
+];
+
+export default function AboutPage() {
+  return (
+    <>
+      <SEO
+        title="About Us"
+        description="Strata Surfaces sources, cuts and installs premium granite, tiles and quartz for architects, designers and homeowners."
+      />
+      <PageHero
+        eyebrow="About Strata"
+        title="Built on Stone, Guided by Craft"
+        description="For nearly two decades, we've helped architects, designers and homeowners choose surfaces that last — not just look good on day one."
+        image={img.graniteSurfacePolished}
+      />
+
+      <section className="py-24 sm:py-28">
+        <div className="container-edge grid grid-cols-1 gap-14 lg:grid-cols-2 lg:gap-20">
+          <Reveal>
+            <SectionHeading
+              eyebrow="Our Story"
+              title="A Material-First Approach to Every Project"
+            />
+            <div className="mt-6 space-y-5 text-base leading-relaxed text-charcoal-light">
+              <p>
+                Strata Surfaces began with a simple frustration: too many surface suppliers sold
+                on price and availability, not on whether a material actually suited the space it
+                was going into. We set out to do it differently.
+              </p>
+              <p>
+                Today, we work with architects, interior designers, builders and homeowners across
+                residential, commercial and hospitality projects — sourcing natural granite,
+                engineered quartz, and porcelain and ceramic tile from trusted quarries and
+                manufacturers, and guiding every client toward the surface that will genuinely
+                perform for their space.
+              </p>
+              <p>
+                From first sample to final polish, our team stays involved — because a beautiful
+                surface is only as good as the guidance and craftsmanship behind it.
+              </p>
+            </div>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <div className="grid grid-cols-2 gap-4">
+              <img
+                src={img.kitchenGraniteVaulted}
+                alt="Granite kitchen countertop installation"
+                className="col-span-2 aspect-[16/10] w-full object-cover"
+              />
+              <img src={img.marbleWhiteYule} alt="Marble stone texture" className="aspect-square w-full object-cover" />
+              <img src={img.tileTerracotta} alt="Terracotta floor tile texture" className="aspect-square w-full object-cover" />
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      <section className="border-y border-stone-200 bg-stone-100 py-16">
+        <div className="container-edge grid grid-cols-2 gap-10 sm:grid-cols-4">
+          {stats.map((stat) => (
+            <NumberCounter key={stat.label} {...stat} />
+          ))}
+        </div>
+      </section>
+
+      <section className="py-24 sm:py-28">
+        <div className="container-edge">
+          <SectionHeading eyebrow="What Guides Us" title="Our Values" align="center" />
+          <div className="mt-16 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+            {values.map((value, i) => (
+              <Reveal key={value.title} delay={(i % 4) * 0.08}>
+                <div className="border-t border-ink pt-6">
+                  <h3 className="text-lg text-ink">{value.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-charcoal-light">{value.description}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <CTASection />
+    </>
+  );
+}
