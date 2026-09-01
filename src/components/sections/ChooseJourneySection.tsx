@@ -62,14 +62,14 @@ function StatCard({ value, suffix, label }: { value: number; suffix: string; lab
   }, [spring]);
 
   return (
-    <div ref={ref} className="relative rounded-2xl border border-stone-200 bg-warm-white p-6">
-      <span className="absolute right-4 top-4 h-3 w-3 border-r-2 border-t-2 border-clay" aria-hidden />
-      <p className="font-barlow text-4xl font-bold leading-none text-clay">
+    <div ref={ref} className="relative rounded-[24px] bg-white p-5">
+      <span className="absolute right-4 top-4 h-3 w-3 border-r-2 border-t-2 border-[#DD2227]" aria-hidden />
+      <p className="font-barlow text-[44px] font-semibold leading-[1] tracking-[-1px] text-[#DD2227] sm:text-[56px] sm:tracking-[-2px] lg:text-[72px] lg:leading-[76px]">
         {display}
         {suffix}
       </p>
-      <span className="mt-4 block h-px w-8 bg-stone-300" aria-hidden />
-      <p className="mt-3 font-albert text-sm leading-snug text-charcoal-light">{label}</p>
+      <span className="mt-4 block h-px w-8 bg-[#AEB4B7]" aria-hidden />
+      <p className="mt-3 font-albert text-[18px] font-medium leading-[20px] text-[#6C6C6C]">{label}</p>
     </div>
   );
 }
@@ -78,18 +78,30 @@ export default function ChooseJourneySection() {
   const [active, setActive] = useState(journeys[0].id);
 
   return (
-    <section className="bg-stone-100 py-24 sm:py-28">
-      <div className="container-edge mb-20 grid grid-cols-1 gap-10 lg:grid-cols-2 lg:items-center lg:gap-16">
-        <Reveal>
-          <p className="font-albert text-[17px] leading-[1.6] text-charcoal-light">
-            Strata Surfaces began with a simple frustration: too many surface suppliers sold on
-            price and availability, not on whether a material actually suited the space it was
-            going into. We set out to do it differently.
-          </p>
-          <div className="mt-7">
-            <Button href="/about" variant="primary">
-              About Us
-            </Button>
+    <section className="bg-[#F7F6F5] py-24 sm:py-28">
+      <div className="container-edge mb-20 grid grid-cols-1 gap-6 lg:grid-cols-2 lg:items-stretch lg:gap-6">
+        <Reveal className="flex rounded-[24px] bg-white p-8 sm:p-10">
+          <div className="flex flex-col justify-center">
+            <h2 className="max-w-md font-barlow text-[32px] font-bold leading-[1] tracking-normal text-[#191B1C] sm:text-[39px]">
+              A Material-First Approach to Every Project
+            </h2>
+            <p className="mt-5 max-w-md font-albert text-[18px] font-normal leading-[20px] tracking-normal text-[#6C6C6C]">
+              Strata Surfaces began with a simple frustration: too many surface suppliers sold on
+              price and availability, not on whether a material actually suited the space it was
+              going into. We set out to do it differently.
+            </p>
+            <div className="mt-7">
+              <Button
+                href="/about"
+                variant="primary"
+                className="rounded-[30px] px-6 py-3 text-[14px] font-normal normal-case tracking-normal"
+              >
+                About Us
+                <svg viewBox="0 0 24 24" className="h-4 w-4 fill-none stroke-current" strokeWidth="2">
+                  <path d="M7 17 17 7M9 7h8v8" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </Button>
+            </div>
           </div>
         </Reveal>
 
@@ -102,13 +114,13 @@ export default function ChooseJourneySection() {
 
       <div className="container-edge text-center">
         <Reveal>
-          <h2 className="font-barlow text-[39px] font-bold leading-[1.1] tracking-normal text-[#191B1C]">
+          <h2 className="font-barlow text-[39px] font-bold leading-[44px] tracking-normal text-[#191B1C]">
             Choose Your Journey
           </h2>
         </Reveal>
 
         <Reveal delay={0.08}>
-          <p className="mx-auto mt-[10px] max-w-xl font-albert text-[18px] font-normal leading-[1.45] tracking-normal text-[#6C6C6C]">
+          <p className="mx-auto mt-[10px] max-w-xl font-albert text-[18px] font-medium leading-[20px] tracking-normal text-[#6C6C6C]">
             What are you looking for today? Begin your exploration below.
           </p>
         </Reveal>
@@ -116,7 +128,7 @@ export default function ChooseJourneySection() {
         <Reveal delay={0.16} className="mt-12 flex justify-center">
           <div
             onMouseLeave={() => setActive(journeys[0].id)}
-            className="inline-flex w-full max-w-md flex-col gap-1.5 rounded-[2rem] border border-stone-200 bg-warm-white p-2 shadow-sm sm:w-auto sm:max-w-none sm:flex-row sm:rounded-full sm:gap-1"
+            className="inline-flex w-full max-w-md flex-col gap-1.5 rounded-[2rem] bg-white p-2 sm:w-auto sm:max-w-none sm:flex-row sm:rounded-full sm:gap-1"
           >
             {journeys.map((journey) => {
               const isActive = journey.id === active;
@@ -126,8 +138,8 @@ export default function ChooseJourneySection() {
                   to={journey.href}
                   onMouseEnter={() => setActive(journey.id)}
                   onFocus={() => setActive(journey.id)}
-                  className={`flex w-full items-center justify-center gap-3 rounded-full px-7 py-4 font-albert text-base font-semibold transition-colors duration-300 sm:w-auto ${
-                    isActive ? "bg-ink text-warm-white" : "text-charcoal hover:text-ink"
+                  className={`flex w-full items-center justify-center gap-3 rounded-full px-8 py-3 font-albert text-base font-medium transition-colors duration-300 sm:w-auto ${
+                    isActive ? "bg-[#1A1A1A] text-warm-white" : "text-charcoal hover:text-ink"
                   }`}
                 >
                   <svg
