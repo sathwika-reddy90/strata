@@ -21,7 +21,7 @@ const tiles: Tile[] = [
   },
   {
     id: "tiles",
-    label: "Tiles & Porcelain",
+    label: "Tiles",
     description: "Elegant surfaces for floors, walls and contemporary interiors.",
     image: img.tileTerracotta,
     href: "/products/tiles",
@@ -33,6 +33,13 @@ const tiles: Tile[] = [
     image: img.kitchenCountertopD,
     href: "/products/quartz",
   },
+  {
+    id: "natural-stone",
+    label: "Natural Stone",
+    description: "Natural stone with timeless character, natural variation and distinctive beauty.",
+    image: img.marbleWhiteYule,
+    href: "/products/natural-stone",
+  },
 ];
 
 function CategoryTile({ tile }: { tile: Tile }) {
@@ -40,7 +47,7 @@ function CategoryTile({ tile }: { tile: Tile }) {
     <Link
       to={tile.href}
       aria-label={tile.label}
-      className="group relative flex aspect-square w-full flex-col justify-end overflow-hidden rounded-3xl bg-ink"
+      className="group relative flex aspect-square w-full flex-col justify-end overflow-hidden rounded-3xl bg-ink shadow-[0_1px_3px_rgba(28,27,25,0.08)] transition-shadow duration-500 hover:shadow-[0_28px_56px_-20px_rgba(28,27,25,0.4)]"
     >
       <motion.img
         src={tile.image}
@@ -54,7 +61,7 @@ function CategoryTile({ tile }: { tile: Tile }) {
 
       <div className="relative flex items-end justify-between gap-5 p-7 sm:p-8">
         <div className="min-w-0">
-          <h3 className="font-sans text-[1.75rem] font-bold leading-[1.1] text-warm-white sm:text-[2rem]">
+          <h3 className="font-sans text-[1.75rem] font-bold leading-[1.1] text-warm-white transition-colors duration-300 group-hover:text-clay-light sm:text-[2rem]">
             {tile.label}
           </h3>
           <p className="mt-2.5 max-w-[90%] text-[15px] leading-[1.45] text-stone-200/90 sm:text-[16px]">
@@ -62,7 +69,7 @@ function CategoryTile({ tile }: { tile: Tile }) {
           </p>
         </div>
 
-        <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-warm-white/30 bg-warm-white/10 text-warm-white backdrop-blur-sm transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:bg-warm-white group-hover:text-ink">
+        <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-warm-white/30 bg-warm-white/10 text-warm-white backdrop-blur-sm transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:border-clay group-hover:bg-clay group-hover:text-warm-white">
           <svg
             viewBox="0 0 24 24"
             className="h-5 w-5 fill-none stroke-current"
@@ -84,18 +91,18 @@ export default function CategoryHighlightsSection() {
       <div className="container-edge">
         <div className="max-w-2xl">
           <Reveal>
-            <h2 className="font-barlow text-[39px] font-bold leading-[1.1] tracking-normal text-[#191B1C]">
+            <h2 className="font-barlow text-[31px] font-bold leading-[1.05] tracking-normal text-[#191B1C] sm:text-[39px]">
               Our Offerings
             </h2>
           </Reveal>
           <Reveal delay={0.08}>
-            <p className="mt-[10px] max-w-xl font-albert text-[18px] font-normal leading-[1.45] tracking-normal text-[#6C6C6C]">
-              Three material families, one uncompromising standard of quality and craftsmanship.
+            <p className="mt-[10px] max-w-xl font-albert text-[16px] font-medium leading-[20px] tracking-normal text-[#6C6C6C] sm:text-[18px]">
+              Four material families, one uncompromising standard of quality and craftsmanship.
             </p>
           </Reveal>
         </div>
 
-        <div className="mt-3 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-7">
+        <div className="mt-3 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-7">
           {tiles.map((tile, i) => (
             <Reveal key={tile.id} delay={i * 0.08} className="h-full">
               <CategoryTile tile={tile} />

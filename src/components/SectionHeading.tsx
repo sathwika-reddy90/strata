@@ -19,12 +19,15 @@ export default function SectionHeading({
     <div className={align === "center" ? "mx-auto max-w-2xl text-center" : "max-w-2xl"}>
       {eyebrow && (
         <Reveal>
-          <p className="eyebrow mb-4">{eyebrow}</p>
+          <div className={`mb-4 flex items-center gap-3 ${align === "center" ? "justify-center" : ""}`}>
+            <span className="h-px w-8 bg-clay" aria-hidden />
+            <p className="eyebrow mb-0">{eyebrow}</p>
+          </div>
         </Reveal>
       )}
       <Reveal delay={0.08}>
         <h2
-          className={`text-balance font-barlow text-[2rem] font-bold leading-[1.1] tracking-tight sm:text-[2.75rem] lg:text-[3.25rem] ${
+          className={`text-balance font-barlow text-[34px] font-bold leading-[1.08] tracking-tight sm:text-[42px] ${
             light ? "text-warm-white" : "text-ink"
           }`}
         >
@@ -34,7 +37,7 @@ export default function SectionHeading({
       {description && (
         <Reveal delay={0.16}>
           <p
-            className={`mt-5 text-balance text-[15px] leading-[1.5] sm:text-[17px] ${
+            className={`mt-5 text-balance font-albert text-[16px] font-normal leading-[1.6] sm:text-[18px] ${
               light ? "text-stone-200" : "text-charcoal-light"
             }`}
           >

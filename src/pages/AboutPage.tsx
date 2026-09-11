@@ -14,10 +14,10 @@ const values = [
 ];
 
 const stats = [
-  { value: 18, suffix: "+", label: "Years in Business" },
-  { value: 4200, suffix: "+", label: "Projects Delivered" },
-  { value: 60, suffix: "+", label: "Surface Collections" },
-  { value: 98, suffix: "%", label: "Client Satisfaction" },
+  { value: 30, suffix: "+", label: "Years in Business" },
+  { value: 4000, suffix: "+", label: "Projects Delivered" },
+  { value: 10, suffix: "+", label: "Surface Collections" },
+  { value: 100, suffix: "%", label: "Client Satisfaction" },
 ];
 
 export default function AboutPage() {
@@ -50,7 +50,7 @@ export default function AboutPage() {
               <p>
                 Today, we work with architects, interior designers, builders and homeowners across
                 residential, commercial and hospitality projects — sourcing natural granite,
-                engineered quartz, and porcelain and ceramic tile from trusted quarries and
+                engineered quartz, and ceramic tile from trusted quarries and
                 manufacturers, and guiding every client toward the surface that will genuinely
                 perform for their space.
               </p>

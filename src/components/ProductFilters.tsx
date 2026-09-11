@@ -21,7 +21,7 @@ export default function ProductFilters({ groups, active, onChange, onReset }: Pr
           <select
             value={active[group.key] ?? "All"}
             onChange={(e) => onChange(group.key, e.target.value)}
-            className="cursor-pointer appearance-none border border-stone-300 bg-warm-white px-4 py-2.5 pr-9 text-xs font-semibold uppercase tracking-[0.1em] text-charcoal outline-none transition-colors hover:border-ink"
+            className="cursor-pointer appearance-none border border-stone-300 bg-warm-white px-4 py-2.5 pr-9 text-xs font-semibold uppercase tracking-[0.1em] text-charcoal outline-none transition-colors hover:border-clay"
           >
             <option value="All">{group.label}: All</option>
             {group.options.map((opt) => (

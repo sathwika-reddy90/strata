@@ -49,7 +49,7 @@ export default function FAQSection() {
           <button
             onClick={() => go(-1)}
             aria-label="Previous question"
-            className="flex h-11 w-11 items-center justify-center rounded-full border border-stone-300 text-ink transition-colors hover:border-ink"
+            className="flex h-11 w-11 items-center justify-center rounded-full border border-stone-300 text-ink transition-colors hover:border-clay hover:text-clay"
           >
             &#8592;
           </button>
@@ -59,7 +59,7 @@ export default function FAQSection() {
           <button
             onClick={() => go(1)}
             aria-label="Next question"
-            className="flex h-11 w-11 items-center justify-center rounded-full border border-stone-300 text-ink transition-colors hover:border-ink"
+            className="flex h-11 w-11 items-center justify-center rounded-full border border-stone-300 text-ink transition-colors hover:border-clay hover:text-clay"
           >
             &#8594;
           </button>

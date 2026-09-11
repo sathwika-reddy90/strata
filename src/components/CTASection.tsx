@@ -12,10 +12,15 @@ export default function CTASection() {
         className="absolute inset-0 h-full w-full object-cover opacity-30"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/90 to-ink/70" />
+      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-clay/70 to-transparent" />
 
       <div className="container-edge relative mx-auto max-w-3xl text-center">
         <Reveal>
-          <p className="eyebrow mb-5 text-gold-light">Start Your Project</p>
+          <div className="mb-5 flex items-center justify-center gap-3">
+            <span className="h-px w-8 bg-clay" aria-hidden />
+            <p className="eyebrow text-gold-light">Start Your Project</p>
+            <span className="h-px w-8 bg-clay" aria-hidden />
+          </div>
         </Reveal>
         <Reveal delay={0.08}>
           <h2 className="text-balance font-barlow text-[2rem] font-bold leading-[1.1] tracking-tight text-warm-white sm:text-[2.75rem] lg:text-[3.25rem]">
@@ -30,7 +35,7 @@ export default function CTASection() {
         </Reveal>
         <Reveal delay={0.24}>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
-            <Button href="/contact" variant="inverse">
+            <Button href="/contact" variant="primary">
               Request a Quote
             </Button>
             <Button href={whatsappHref()} external variant="outlineLight">

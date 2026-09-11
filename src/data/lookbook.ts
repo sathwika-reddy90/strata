@@ -23,7 +23,7 @@ export const lookbookSlides: LookbookSlide[] = [
   {
     id: "look-4",
     title: "Industrial & Urban",
-    description: "Concrete-grey quartz and large-format porcelain for loft-inspired, textural interiors.",
+    description: "Concrete-grey quartz and large-format tile for loft-inspired, textural interiors.",
     image: img.livingRoomGrey,
   },
   {

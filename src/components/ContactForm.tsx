@@ -2,11 +2,11 @@ import { useState } from "react";
 import type { FormEvent } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
-const productOptions = ["Granite", "Tiles", "Porcelain", "Quartz", "Not Sure"];
+const productOptions = ["Granite", "Tiles", "Quartz", "Natural Stone", "Not Sure"];
 const projectTypeOptions = ["Residential", "Commercial", "Hospitality", "Renovation", "New Build"];
 
 const inputClasses =
-  "w-full border border-stone-300 bg-warm-white px-4 py-3.5 text-sm text-ink placeholder:text-taupe outline-none transition-colors focus:border-ink";
+  "w-full border border-stone-300 bg-warm-white px-4 py-3.5 text-sm text-ink placeholder:text-taupe outline-none transition-colors focus:border-clay";
 
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
@@ -99,7 +99,7 @@ export default function ContactForm() {
         <button
           type="submit"
           disabled={submitting}
-          className="inline-flex w-full items-center justify-center gap-3 bg-ink px-7 py-4 text-sm font-semibold uppercase tracking-[0.14em] text-warm-white transition-colors duration-300 hover:bg-clay disabled:opacity-60 sm:w-auto"
+          className="inline-flex w-full items-center justify-center gap-3 rounded-full bg-clay px-7 py-4 text-sm font-semibold uppercase tracking-[0.14em] text-warm-white transition-colors duration-300 hover:bg-clay-deep disabled:opacity-60 sm:w-auto"
         >
           {submitting ? "Sending..." : "Send Enquiry"}
         </button>

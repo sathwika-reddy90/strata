@@ -2,13 +2,12 @@ import { Routes, Route } from "react-router-dom";
 import Layout from "@/components/Layout";
 import HomePage from "@/pages/HomePage";
 import AboutPage from "@/pages/AboutPage";
-import CollectionsPage from "@/pages/CollectionsPage";
 import GalleryPage from "@/pages/GalleryPage";
 import ProductsPage from "@/pages/ProductsPage";
 import GraniteProductsPage from "@/pages/GraniteProductsPage";
 import TilesProductsPage from "@/pages/TilesProductsPage";
-import PorcelainProductsPage from "@/pages/PorcelainProductsPage";
 import QuartzProductsPage from "@/pages/QuartzProductsPage";
+import NaturalStoneProductsPage from "@/pages/NaturalStoneProductsPage";
 import PortfolioPage from "@/pages/PortfolioPage";
 import BlogPage from "@/pages/BlogPage";
 import TestimonialsPage from "@/pages/TestimonialsPage";
@@ -23,13 +22,12 @@ export default function App() {
       <Route element={<Layout />}>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/collections" element={<CollectionsPage />} />
         <Route path="/gallery" element={<GalleryPage />} />
         <Route path="/products" element={<ProductsPage />} />
         <Route path="/products/granite" element={<GraniteProductsPage />} />
         <Route path="/products/tiles" element={<TilesProductsPage />} />
-        <Route path="/products/porcelain" element={<PorcelainProductsPage />} />
         <Route path="/products/quartz" element={<QuartzProductsPage />} />
+        <Route path="/products/natural-stone" element={<NaturalStoneProductsPage />} />
         <Route path="/portfolio" element={<PortfolioPage />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/testimonials" element={<TestimonialsPage />} />

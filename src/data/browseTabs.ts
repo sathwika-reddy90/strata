@@ -31,7 +31,7 @@ export const browseTabs: BrowseTab[] = [
       {
         number: "02",
         title: "Walls & Cladding",
-        description: "Feature walls, kitchen backsplashes and facade cladding in stone and porcelain.",
+        description: "Feature walls, kitchen backsplashes and facade cladding in stone and tile.",
         ctaLabel: "Browse Wall Surfaces",
         href: "/products/tiles#wall",
         image: img.livingRoomStoneWall,
@@ -71,7 +71,7 @@ export const browseTabs: BrowseTab[] = [
         title: "Full Slabs",
         description: "Book-matched, edge-to-edge slabs for islands, feature walls and reception desks.",
         ctaLabel: "Browse Slabs",
-        href: "/products/porcelain",
+        href: "/products/quartz#slabs",
         image: img.kitchenQuartzWaterfall,
       },
     ],

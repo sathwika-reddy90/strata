@@ -12,7 +12,7 @@ export const testimonials: Testimonial[] = [
   {
     id: "t-2",
     quote:
-      "We needed large-format porcelain for a hotel lobby on a tight timeline. The consistency across every slab, and the installation support, made the whole project painless.",
+      "We needed large-format quartz for a hotel lobby on a tight timeline. The consistency across every slab, and the installation support, made the whole project painless.",
     customer: "Vikram Sethi",
     project: "Blue Horizon Boutique Hotel",
     location: "Goa",

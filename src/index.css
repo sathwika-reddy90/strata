@@ -13,12 +13,14 @@
   --color-stone-300: #c9bda6;
   --color-stone-400: #a99878;
   --color-taupe: #8a7860;
-  --color-clay: #a5652e;
+  --color-clay: #a3181d;
+  --color-clay-deep: #7a1216;
+  --color-clay-light: #e2a9ac;
   --color-charcoal: #2a2723;
   --color-charcoal-light: #3a3630;
   --color-ink: #1c1b19;
-  --color-gold: #c9a876;
-  --color-gold-light: #ddc79c;
+  --color-gold: #b5383d;
+  --color-gold-light: #e3aaa8;
 
   --breakpoint-xs: 375px;
 
@@ -74,7 +76,7 @@
     @apply mx-auto w-full max-w-[1480px] px-6 sm:px-8 lg:px-12;
   }
   .eyebrow {
-    @apply text-[13px] sm:text-[14px] font-semibold uppercase tracking-[0.25em] text-clay;
+    @apply font-albert text-[13px] font-medium uppercase tracking-[0.16em] text-clay;
   }
   .text-balance {
     text-wrap: balance;

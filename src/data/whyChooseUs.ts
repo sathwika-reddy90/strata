@@ -19,7 +19,7 @@ export const whyChooseUsItems: WhyChooseUsItem[] = [
   {
     id: "why-4",
     title: "Wide Product Range",
-    description: "From natural granite to engineered quartz and porcelain, one source for every surface need.",
+    description: "From natural granite to engineered quartz and tile, one source for every surface need.",
   },
   {
     id: "why-5",

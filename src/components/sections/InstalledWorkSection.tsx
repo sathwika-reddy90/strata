@@ -13,7 +13,7 @@ export default function InstalledWorkSection() {
   }));
 
   return (
-    <section className="bg-cream py-24 sm:py-28">
+    <section className="bg-stone-100 py-24 sm:py-28">
       <div className="container-edge">
         <SectionHeading
           eyebrow="Installed Work"

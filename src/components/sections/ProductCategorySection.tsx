@@ -11,7 +11,7 @@ const categories = [
     ctaLabel: "Explore Granite",
   },
   {
-    title: "Tiles & Porcelain",
+    title: "Tiles",
     description: "Elegant surfaces for floors, walls and contemporary interiors.",
     image: img.tileCreamSpeckled,
     href: "/products/tiles",
@@ -23,6 +23,13 @@ const categories = [
     image: img.kitchenQuartzWaterfall,
     href: "/products/quartz",
     ctaLabel: "Explore Quartz",
+  },
+  {
+    title: "Natural Stone",
+    description: "Natural stone with timeless character, natural variation and distinctive beauty.",
+    image: img.marbleWhiteYule,
+    href: "/products/natural-stone",
+    ctaLabel: "Explore Natural Stone",
   },
 ];
 
@@ -41,12 +48,12 @@ export default function ProductCategorySection() {
           </Reveal>
           <Reveal delay={0.16}>
             <p className="mt-4 max-w-xl text-balance text-[15px] leading-[1.5] text-charcoal-light sm:text-[17px]">
-              Three material families, one uncompromising standard of quality and craftsmanship.
+              Four material families, one uncompromising standard of quality and craftsmanship.
             </p>
           </Reveal>
         </div>
 
-        <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-7">
+        <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-7">
           {categories.map((cat, i) => (
             <HomeProductCategoryCard key={cat.title} index={i} {...cat} />
           ))}

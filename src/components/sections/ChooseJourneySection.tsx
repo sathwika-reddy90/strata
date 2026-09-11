@@ -20,7 +20,7 @@ const journeys: Journey[] = [
   },
   {
     id: "tiles",
-    label: "Tiles & Porcelain",
+    label: "Tiles",
     href: "/products/tiles",
     icon: (
       <>
@@ -37,13 +37,24 @@ const journeys: Journey[] = [
     href: "/products/quartz",
     icon: <path d="M12 2 16 8.5 12 22 8 8.5 12 2ZM7.5 8.5h9" />,
   },
+  {
+    id: "natural-stone",
+    label: "Natural Stone",
+    href: "/products/natural-stone",
+    icon: (
+      <>
+        <ellipse cx="8" cy="16" rx="5.5" ry="3.5" />
+        <ellipse cx="15.5" cy="10.5" rx="6.5" ry="4" />
+      </>
+    ),
+  },
 ];
 
 const stats = [
-  { value: 18, suffix: "+", label: "Years in Business" },
-  { value: 4200, suffix: "+", label: "Projects Delivered" },
-  { value: 60, suffix: "+", label: "Surface Collections" },
-  { value: 98, suffix: "%", label: "Client Satisfaction" },
+  { value: 30, suffix: "+", label: "Years in Business" },
+  { value: 4000, suffix: "+", label: "Projects Delivered" },
+  { value: 10, suffix: "+", label: "Surface Collections" },
+  { value: 100, suffix: "%", label: "Client Satisfaction" },
 ];
 
 function StatCard({ value, suffix, label }: { value: number; suffix: string; label: string }) {
@@ -63,8 +74,8 @@ function StatCard({ value, suffix, label }: { value: number; suffix: string; lab
 
   return (
     <div ref={ref} className="relative rounded-[24px] bg-white p-5">
-      <span className="absolute right-4 top-4 h-3 w-3 border-r-2 border-t-2 border-[#DD2227]" aria-hidden />
-      <p className="font-barlow text-[44px] font-semibold leading-[1] tracking-[-1px] text-[#DD2227] sm:text-[56px] sm:tracking-[-2px] lg:text-[72px] lg:leading-[76px]">
+      <span className="absolute right-4 top-4 h-3 w-3 border-r-2 border-t-2 border-clay" aria-hidden />
+      <p className="font-barlow text-[44px] font-semibold leading-[1] tracking-[-1px] text-clay sm:text-[56px] sm:tracking-[-2px] lg:text-[72px] lg:leading-[76px]">
         {display}
         {suffix}
       </p>
@@ -125,7 +136,7 @@ export default function ChooseJourneySection() {
           </p>
         </Reveal>
 
-        <Reveal delay={0.16} className="mt-12 flex justify-center">
+        <Reveal delay={0.16} className="mt-[10px] flex justify-center">
           <div
             onMouseLeave={() => setActive(journeys[0].id)}
             className="inline-flex w-full max-w-md flex-col gap-1.5 rounded-[2rem] bg-white p-2 sm:w-auto sm:max-w-none sm:flex-row sm:rounded-full sm:gap-1"
@@ -144,7 +155,7 @@ export default function ChooseJourneySection() {
                 >
                   <svg
                     viewBox="0 0 24 24"
-                    className="h-5 w-5 shrink-0 fill-none stroke-current"
+                    className="h-[26px] w-[26px] shrink-0 fill-none stroke-current"
                     strokeWidth="1.6"
                     strokeLinecap="round"
                     strokeLinejoin="round"

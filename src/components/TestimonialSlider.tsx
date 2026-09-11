@@ -55,7 +55,7 @@ export default function TestimonialSlider({ testimonials }: TestimonialSliderPro
             onClick={() => setIndex(i)}
             aria-label={`Show testimonial ${i + 1}`}
             className={`h-1.5 rounded-full transition-all duration-400 ${
-              i === index ? "w-8 bg-ink" : "w-1.5 bg-stone-300"
+              i === index ? "w-8 bg-clay" : "w-1.5 bg-stone-300 hover:bg-stone-400"
             }`}
           />
         ))}

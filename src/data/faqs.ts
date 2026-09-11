@@ -12,12 +12,6 @@ export const faqs: FAQ[] = [
       "Granite is a natural stone — every slab is unique, heat-resistant and needs periodic sealing. Quartz is engineered from crushed stone and resin, giving a more uniform pattern, higher stain resistance and virtually no maintenance.",
   },
   {
-    id: "faq-2",
-    question: "Are porcelain slabs as strong as natural stone?",
-    answer:
-      "Fully vitrified porcelain has very low water absorption and excellent scratch and stain resistance, often outperforming natural stone in high-traffic or wet areas, while offering a consistent, marble-inspired look.",
-  },
-  {
     id: "faq-3",
     question: "How do I choose a tile size for a small room?",
     answer:
@@ -37,8 +31,8 @@ export const faqs: FAQ[] = [
   },
   {
     id: "faq-6",
-    question: "Can I mix materials — granite countertops with porcelain floors?",
+    question: "Can I mix materials — granite countertops with tile floors?",
     answer:
-      "Yes — many of our projects pair a natural granite countertop with large-format porcelain flooring for contrast in texture while keeping the palette cohesive. Our team can help balance tones and finishes.",
+      "Yes — many of our projects pair a natural granite countertop with large-format tile flooring for contrast in texture while keeping the palette cohesive. Our team can help balance tones and finishes.",
   },
 ];

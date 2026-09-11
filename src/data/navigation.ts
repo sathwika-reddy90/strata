@@ -21,12 +21,11 @@ export const productsMegaMenu: MegaMenuColumn[] = [
     ],
   },
   {
-    heading: "Tiles & Porcelain",
+    heading: "Tiles",
     href: "/products/tiles",
     links: [
       { label: "Floor Tiles", href: "/products/tiles#floor" },
       { label: "Wall Tiles", href: "/products/tiles#wall" },
-      { label: "Porcelain Tiles", href: "/products/porcelain" },
       { label: "Large Format Tiles", href: "/products/tiles#large-format" },
       { label: "Outdoor Tiles", href: "/products/tiles#outdoor" },
     ],
@@ -41,17 +40,21 @@ export const productsMegaMenu: MegaMenuColumn[] = [
       { label: "Interior Applications", href: "/products/quartz#interior" },
     ],
   },
-];
-
-export const collectionsMegaMenu: NavLink[] = [
-  { label: "Product Collections", href: "/collections#product-collections" },
-  { label: "Gallery of Installed Work", href: "/gallery" },
+  {
+    heading: "Natural Stone",
+    href: "/products/natural-stone",
+    links: [
+      { label: "Natural Stone Slabs", href: "/products/natural-stone#slabs" },
+      { label: "Countertops", href: "/products/natural-stone#countertops" },
+      { label: "Flooring", href: "/products/natural-stone#flooring" },
+      { label: "Applications", href: "/products/natural-stone#applications" },
+    ],
+  },
 ];
 
 export const primaryNav: NavLink[] = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
-  { label: "Collections", href: "/collections" },
   { label: "Products", href: "/products" },
   { label: "Portfolio", href: "/portfolio" },
   { label: "Resources", href: "/blog" },
@@ -62,8 +65,8 @@ export const footerLinks = {
   products: [
     { label: "Granite", href: "/products/granite" },
     { label: "Tiles", href: "/products/tiles" },
-    { label: "Porcelain", href: "/products/porcelain" },
     { label: "Quartz", href: "/products/quartz" },
+    { label: "Natural Stone", href: "/products/natural-stone" },
   ],
   company: [
     { label: "About Us", href: "/about" },
@@ -72,7 +75,6 @@ export const footerLinks = {
     { label: "Testimonials", href: "/testimonials" },
   ],
   explore: [
-    { label: "Collections", href: "/collections" },
     { label: "Gallery", href: "/gallery" },
     { label: "Blog", href: "/blog" },
     { label: "Resources", href: "/blog" },

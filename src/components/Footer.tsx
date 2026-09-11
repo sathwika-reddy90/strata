@@ -17,7 +17,8 @@ function SocialIcon({ label, path }: { label: string; path: string }) {
 
 export default function Footer() {
   return (
-    <footer className="bg-ink text-warm-white">
+    <footer className="relative bg-ink text-warm-white">
+      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-clay to-transparent" />
       <div className="container-edge grid grid-cols-1 gap-12 py-20 sm:grid-cols-2 lg:grid-cols-5">
         <div className="lg:col-span-2">
           <span className="font-display text-3xl">STRATA</span>

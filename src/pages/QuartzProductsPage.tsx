@@ -1,24 +1,13 @@
-import { useMemo, useState } from "react";
 import SEO from "@/components/SEO";
 import PageHero from "@/components/PageHero";
 import SectionHeading from "@/components/SectionHeading";
-import ProductFilters from "@/components/ProductFilters";
-import ProductGrid from "@/components/ProductGrid";
+import PdfCard from "@/components/PdfCard";
 import Reveal from "@/components/Reveal";
-import { quartzProducts, quartzSubcategories, quartzApplications } from "@/data/quartz";
+import { quartzApplications } from "@/data/quartz";
+import { quartzBrochures } from "@/data/quartzBrochures";
 import { img } from "@/data/images";
 
 export default function QuartzProductsPage() {
-  const [active, setActive] = useState<Record<string, string>>({ subcategory: "All" });
-
-  const filtered = useMemo(
-    () =>
-      quartzProducts.filter(
-        (p) => active.subcategory === "All" || p.subcategory === active.subcategory,
-      ),
-    [active],
-  );
-
   return (
     <>
       <SEO
@@ -36,17 +25,10 @@ export default function QuartzProductsPage() {
         <div className="container-edge">
           <SectionHeading eyebrow="Full Range" title="Quartz Collections" />
 
-          <div className="mt-10">
-            <ProductFilters
-              groups={[{ key: "subcategory", label: "Category", options: [...quartzSubcategories] }]}
-              active={active}
-              onChange={(key, value) => setActive((prev) => ({ ...prev, [key]: value }))}
-              onReset={() => setActive({ subcategory: "All" })}
-            />
-          </div>
-
-          <div id="kitchen" className="mt-12">
-            <ProductGrid products={filtered} />
+          <div id="kitchen" className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {quartzBrochures.map((brochure, i) => (
+              <PdfCard key={brochure.id} brochure={brochure} index={i} />
+            ))}
           </div>
         </div>
       </section>

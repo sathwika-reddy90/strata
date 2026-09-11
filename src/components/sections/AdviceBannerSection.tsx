@@ -34,7 +34,7 @@ export default function AdviceBannerSection() {
     <section className="bg-warm-white py-24 sm:py-28">
       <div className="container-edge">
         <Reveal>
-          <div className="overflow-hidden rounded-[28px] bg-ink sm:rounded-[36px]">
+          <div className="overflow-hidden rounded-[28px] sm:rounded-[36px]">
             <div className="relative">
               <img
                 src={img.diningModern}
@@ -46,7 +46,7 @@ export default function AdviceBannerSection() {
                 <h2 className="max-w-md text-balance font-barlow text-[2rem] font-bold leading-[1.1] tracking-tight text-warm-white sm:text-[2.75rem] lg:text-[3.25rem]">
                   Advice is always on the House
                 </h2>
-                <p className="mt-4 max-w-sm text-balance text-[15px] leading-[1.5] text-stone-200 sm:text-[17px]">
+                <p className="mt-4 max-w-sm text-balance font-albert text-[16px] font-medium leading-[20px] text-stone-200 sm:text-[18px]">
                   Take the guesswork out and create a space you love, with our free design
                   services.
                 </p>
@@ -54,25 +54,27 @@ export default function AdviceBannerSection() {
             </div>
 
             <div className="relative z-10 -mt-16 px-4 pb-4 sm:-mt-20 sm:px-8 sm:pb-8">
-              <div className="rounded-[28px] bg-warm-white p-6 shadow-[0_20px_50px_rgba(28,27,25,0.18)] sm:rounded-[32px] sm:p-10">
+              <div className="rounded-[28px] bg-white px-5 py-10 shadow-[0_20px_50px_rgba(28,27,25,0.18)] sm:rounded-[32px]">
                 <div className="grid grid-cols-1 divide-y divide-stone-200 sm:grid-cols-3 sm:divide-x sm:divide-y-0">
                   {panels.map((panel, i) => (
                     <Reveal
                       key={panel.title}
                       delay={i * 0.08}
-                      className="flex flex-col items-center px-4 py-6 text-center sm:px-8 sm:py-2"
+                      className="flex h-full flex-col items-center px-4 py-6 text-center sm:px-8 sm:py-2"
                     >
-                      <h3 className="font-sans text-xl font-semibold leading-tight text-ink sm:text-[22px]">
-                        {panel.title}
-                      </h3>
-                      <p className="mx-auto mt-3 max-w-xs text-[15px] leading-[1.6] text-charcoal-light">
-                        {panel.description}
-                      </p>
+                      <div className="flex-1">
+                        <h3 className="font-albert text-[20px] font-light leading-[26px] text-ink sm:text-[22px]">
+                          {panel.title}
+                        </h3>
+                        <p className="mx-auto mt-3 max-w-xs font-albert text-[14px] font-normal leading-[20px] text-ink">
+                          {panel.description}
+                        </p>
+                      </div>
                       <a
                         href={panel.href}
                         target={panel.href.startsWith("http") ? "_blank" : undefined}
                         rel={panel.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                        className="mt-6 inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3 text-sm font-medium text-warm-white transition-colors duration-300 hover:bg-clay"
+                        className="mt-6 inline-flex items-center gap-2 rounded-full bg-[#1A1A1A] px-7 py-[14px] font-albert text-[16px] font-medium text-[#F7F6F5] transition-colors duration-300 hover:bg-clay"
                       >
                         <svg viewBox="0 0 24 24" className="h-4 w-4 flex-none fill-none stroke-clay" strokeWidth="2">
                           <path d={panel.icon} strokeLinecap="round" strokeLinejoin="round" />

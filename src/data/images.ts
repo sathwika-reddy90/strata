@@ -69,6 +69,67 @@ export const img = {
 
   // ---- Blog ----
   journalWarmInterior: "/images/blog/journal-warm-interior.jpg",
+
+  // ---- Natural Stone type cards (Sandstone, Kota, Tandur, Kadapa Black, Limestone) ----
+  naturalStoneSandstone1: "/images/natural-stone/sandstone/sandstone-1.jpg",
+  naturalStoneKotaStone1: "/images/natural-stone/kota-stone/kota-stone-1.jpg",
+  naturalStoneTandurStones1: "/images/natural-stone/tandur-stones/tandur-stones-1.jpg",
+  naturalStoneKadapaBlack1: "/images/natural-stone/kadapa-black/kadapa-black-1.jpg",
+  naturalStoneLimestones1: "/images/natural-stone/limestones/limestones-1.jpg",
+
+  // ---- Natural Stone collection gallery (sourced from client-provided photography) ----
+  naturalStoneSandstoneA: "/images/natural-stone/sandstone/sandstone-1.jpg",
+  naturalStoneSandstoneB: "/images/natural-stone/sandstone/sandstone-2.jpg",
+  naturalStoneSandstoneC: "/images/natural-stone/sandstone/sandstone-3.jpg",
+  naturalStoneSandstoneD: "/images/natural-stone/sandstone/sandstone-4.jpg",
+  naturalStoneSandstoneE: "/images/natural-stone/sandstone/sandstone-5.jpg",
+  naturalStoneSandstoneF: "/images/natural-stone/sandstone/sandstone-6.jpg",
+  naturalStoneSandstoneG: "/images/natural-stone/sandstone/sandstone-7.jpg",
+  naturalStoneSandstoneH: "/images/natural-stone/sandstone/sandstone-8.jpg",
+  naturalStoneKotaStoneA: "/images/natural-stone/kota-stone/kota-stone-1.jpg",
+  naturalStoneKotaStoneB: "/images/natural-stone/kota-stone/kota-stone-2.jpg",
+  naturalStoneKotaStoneC: "/images/natural-stone/kota-stone/kota-stone-3.jpg",
+  naturalStoneKotaStoneD: "/images/natural-stone/kota-stone/kota-stone-4.jpg",
+  naturalStoneKotaStoneE: "/images/natural-stone/kota-stone/kota-stone-5.jpg",
+  naturalStoneTandurStonesA: "/images/natural-stone/tandur-stones/tandur-stones-1.jpg",
+  naturalStoneTandurStonesB: "/images/natural-stone/tandur-stones/tandur-stones-2.jpg",
+  naturalStoneTandurStonesC: "/images/natural-stone/tandur-stones/tandur-stones-3.jpg",
+  naturalStoneKadapaBlackA: "/images/natural-stone/kadapa-black/kadapa-black-1.jpg",
+  naturalStoneKadapaBlackB: "/images/natural-stone/kadapa-black/kadapa-black-2.jpg",
+  naturalStoneKadapaBlackC: "/images/natural-stone/kadapa-black/kadapa-black-3.jpg",
+  naturalStoneLimestonesA: "/images/natural-stone/limestones/limestones-1.jpg",
+  naturalStoneLimestonesB: "/images/natural-stone/limestones/limestones-2.jpg",
+  naturalStoneLimestonesC: "/images/natural-stone/limestones/limestones-3.jpg",
+
+  // ---- Tile brochure thumbnails (extracted from PDF catalogues) ----
+  tilesDiamondSeries: "/images/tiles/diamond-series.jpg",
+  tilesPosheCarving: "/images/tiles/poshe-carving.jpg",
+  tilesPosheCollection: "/images/tiles/poshe-collection.jpg",
+  tilesMarbleFinish: "/images/tiles/marble-finish.jpg",
+  tilesSlab: "/images/tiles/slab.jpg",
+  tilesConceptA: "/images/tiles/concept-a.jpg",
+  tilesGlossyBath: "/images/tiles/glossy-bath.jpg",
+  tilesGlossyPuja: "/images/tiles/glossy-puja.jpg",
+  tilesGlossyA: "/images/tiles/glossy-a.jpg",
+  tilesGlossyB: "/images/tiles/glossy-b.jpg",
+  tilesHexa: "/images/tiles/hexa.jpg",
+  tilesEndless: "/images/tiles/endless.jpg",
+  tilesGoldSeries: "/images/tiles/gold-series.jpg",
+  tilesMono: "/images/tiles/mono.jpg",
+  tilesMoroccan: "/images/tiles/moroccan.jpg",
+  tilesPlainSeries: "/images/tiles/plain-series.jpg",
+  tilesCarlo: "/images/tiles/carlo.jpg",
+  tilesGrid: "/images/tiles/grid.jpg",
+  tilesLuxy: "/images/tiles/luxy.jpg",
+  tilesCadbury: "/images/tiles/cadbury.jpg",
+  tilesLouvers: "/images/tiles/louvers.jpg",
+  tilesCrossy: "/images/tiles/crossy.jpg",
+  tilesGlossy2026: "/images/tiles/glossy-2026.jpg",
+  tilesElgres: "/images/tiles/elgres.jpg",
+
+  // ---- Quartz brochure thumbnails (extracted from PDF catalogues) ----
+  quartzKalingaBrochure: "/images/quartz/kalingastone-brochure.jpg",
+  quartzCalacattaVein: "/images/quartz/calacatta-vein-series.jpg",
 } as const;
 
 export type ImageKey = keyof typeof img;

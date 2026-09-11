@@ -40,13 +40,13 @@ export default function LookbookSection() {
       <div className="container-edge">
         <div className="max-w-2xl">
           <Reveal>
-            <h2 className="text-balance font-barlow text-[2rem] font-bold leading-[1.1] tracking-tight sm:text-[2.75rem] lg:text-[3.25rem] lg:whitespace-nowrap">
+            <h2 className="text-balance font-barlow text-[31px] font-bold leading-[1.05] tracking-normal sm:text-[39px] lg:whitespace-nowrap">
               <span className="text-ink">Explore Our </span>
-              <span className="text-red-600">LookBook</span>
+              <span className="text-clay">LookBook</span>
             </h2>
           </Reveal>
           <Reveal delay={0.08}>
-            <p className="mt-4 max-w-xl text-balance text-[15px] leading-[1.5] text-charcoal-light sm:text-[17px]">
+            <p className="mt-[10px] max-w-xl text-balance font-albert text-[16px] font-medium leading-[20px] text-charcoal-light sm:text-[18px]">
               Six design directions to help you translate a mood into the right material palette —
               browse how each one comes to life across real spaces.
             </p>

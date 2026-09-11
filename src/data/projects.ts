@@ -24,19 +24,19 @@ export const projects: Project[] = [
     image: img.hotelLobbyMarble,
     gallery: [img.hotelLobbyMarble, img.graniteSurfacePolished],
     description:
-      "A statement lobby featuring a book-matched reception desk in premium quartz and large-format porcelain flooring.",
+      "A statement lobby featuring a book-matched reception desk in premium quartz and large-format tile flooring.",
   },
   {
     id: "proj-3",
     name: "Blue Horizon Boutique Hotel",
     location: "Goa, India",
     category: "Hospitality",
-    materials: ["Bookmatched Calacatta Porcelain", "Harbour Stone Outdoor Tiles"],
+    materials: ["Bookmatched Calacatta Quartz", "Harbour Stone Outdoor Tiles"],
     application: "Lobby Walls & Poolside Decking",
     image: img.outdoorPoolside,
     gallery: [img.outdoorPoolside, img.outdoorPatioStone, img.facadeTravertine],
     description:
-      "A resort-style renovation using book-matched porcelain feature walls indoors and anti-skid stone tiles poolside.",
+      "A resort-style renovation using book-matched quartz feature walls indoors and anti-skid stone tiles poolside.",
   },
   {
     id: "proj-4",
@@ -55,12 +55,12 @@ export const projects: Project[] = [
     name: "Whitefield Spa Bathrooms",
     location: "Bengaluru, India",
     category: "Bathrooms",
-    materials: ["Statuario Vein Porcelain", "Storm Cloud Quartz"],
+    materials: ["Statuario Vein Natural Stone", "Storm Cloud Quartz"],
     application: "Vanity Tops & Wall Cladding",
     image: img.bathroomMarbleVanity,
     gallery: [img.bathroomMarbleVanity, img.bathroomHotelMarble, img.bathroomMarbleDoorway],
     description:
-      "A spa-inspired bathroom suite finished with veined porcelain wall panels and a honed quartz vanity top.",
+      "A spa-inspired bathroom suite finished with veined natural stone wall panels and a honed quartz vanity top.",
   },
   {
     id: "proj-6",
@@ -84,19 +84,19 @@ export const projects: Project[] = [
     image: img.livingRoomGrey,
     gallery: [img.livingRoomGrey, img.kitchenCountertopC],
     description:
-      "Wood-look porcelain flooring throughout, paired with soft matte quartz countertops for a calm, livable palette.",
+      "Wood-look tile flooring throughout, paired with soft matte quartz countertops for a calm, livable palette.",
   },
   {
     id: "proj-8",
     name: "Skyline Corporate Suites",
     location: "Mumbai, India",
     category: "Commercial",
-    materials: ["Sovereign Onyx Quartz", "Skyline Slab XL Porcelain"],
+    materials: ["Sovereign Onyx Quartz", "Skyline Slab XL Natural Stone"],
     application: "Reception Desk & Executive Floor Cladding",
     image: img.graniteSurfacePolished,
     gallery: [img.graniteSurfacePolished, img.hotelLobbyMarble],
     description:
-      "A high-rise office fit-out finished with dark statement quartz surfaces and large-format porcelain cladding.",
+      "A high-rise office fit-out finished with dark statement quartz surfaces and large-format natural stone cladding.",
   },
 ];
 

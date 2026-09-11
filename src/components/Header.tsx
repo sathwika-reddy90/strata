@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
-import { primaryNav, productsMegaMenu, collectionsMegaMenu } from "@/data/navigation";
+import { primaryNav, productsMegaMenu } from "@/data/navigation";
 import { whatsappHref } from "@/config/site";
 import MobileMenu from "./MobileMenu";
 
-type MenuKey = "Products" | "Collections" | null;
+type MenuKey = "Products" | null;
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -46,7 +46,9 @@ export default function Header() {
 
           <nav className="hidden lg:flex items-center gap-8">
             {primaryNav.map((item) => {
-              const hasMega = item.label === "Products" || item.label === "Collections";
+              const hasMega = item.label === "Products";
+              const isActive =
+                item.href === "/" ? location.pathname === "/" : location.pathname.startsWith(item.href);
               return (
                 <div
                   key={item.label}
@@ -55,9 +57,16 @@ export default function Header() {
                 >
                   <Link
                     to={item.href}
-                    className="text-[13px] font-semibold uppercase tracking-[0.14em] text-charcoal transition-colors duration-300 hover:text-clay"
+                    className={`relative text-[13px] font-semibold uppercase tracking-[0.14em] transition-colors duration-300 hover:text-clay ${
+                      isActive ? "text-clay" : "text-charcoal"
+                    }`}
                   >
                     {item.label}
+                    <span
+                      className={`absolute -bottom-1.5 left-0 h-[2px] rounded-full bg-clay transition-all duration-300 ${
+                        isActive ? "w-full" : "w-0"
+                      }`}
+                    />
                   </Link>
                 </div>
               );
@@ -69,7 +78,7 @@ export default function Header() {
               href={whatsappHref()}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden md:inline-flex items-center gap-2 rounded-full bg-ink px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.14em] text-warm-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-clay"
+              className="hidden md:inline-flex items-center gap-2 rounded-full bg-clay px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.14em] text-warm-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-clay-deep"
             >
               Enquire Now
             </a>
@@ -93,7 +102,7 @@ export default function Header() {
                 transition={{ duration: 0.22, ease: "easeOut" }}
                 className="absolute inset-x-0 top-[calc(100%+12px)] rounded-[28px] border border-stone-200/70 bg-warm-white shadow-2xl"
               >
-                <div className="grid grid-cols-3 gap-10 px-10 py-10">
+                <div className="grid grid-cols-4 gap-10 px-10 py-10">
                   {productsMegaMenu.map((col) => (
                     <div key={col.heading}>
                       <Link
@@ -116,32 +125,6 @@ export default function Header() {
                       </ul>
                     </div>
                   ))}
-                </div>
-              </motion.div>
-            )}
-
-            {openMenu === "Collections" && (
-              <motion.div
-                initial={{ opacity: 0, y: -8 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -8 }}
-                transition={{ duration: 0.22, ease: "easeOut" }}
-                className="absolute inset-x-0 top-[calc(100%+12px)] rounded-[28px] border border-stone-200/70 bg-warm-white shadow-2xl"
-              >
-                <div className="px-10 py-10">
-                  <p className="eyebrow mb-4">Collections</p>
-                  <ul className="flex gap-10">
-                    {collectionsMegaMenu.map((l) => (
-                      <li key={l.label}>
-                        <Link
-                          to={l.href}
-                          className="text-[15px] text-charcoal-light hover:text-clay transition-colors"
-                        >
-                          {l.label}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
                 </div>
               </motion.div>
             )}

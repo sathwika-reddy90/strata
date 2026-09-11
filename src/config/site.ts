@@ -3,14 +3,14 @@ export const siteConfig = {
   shortName: "Strata",
   tagline: "Surfaces That Define Spaces",
   description:
-    "Granite, tiles and quartz crafted to bring lasting beauty, character and performance to every space.",
+    "Granite, tiles, quartz and natural stone crafted to bring lasting beauty, character and performance to every space.",
 
   phone: "+91 98765 43210",
   phoneHref: "tel:+919876543210",
 
   whatsappNumber: "919876543210",
   whatsappDefaultMessage:
-    "Hello Strata Surfaces, I'd like to know more about your granite, tiles and quartz collections.",
+    "Hello Strata Surfaces, I'd like to know more about your granite, tiles, quartz and natural stone collections.",
 
   email: "hello@stratasurfaces.example",
 

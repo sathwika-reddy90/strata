@@ -43,7 +43,7 @@ export default function GalleryPage() {
                 className={`px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.12em] transition-colors duration-300 ${
                   category === cat
                     ? "bg-ink text-warm-white"
-                    : "border border-stone-300 text-charcoal hover:border-ink"
+                    : "border border-stone-300 text-charcoal hover:border-clay hover:text-clay"
                 }`}
               >
                 {cat}

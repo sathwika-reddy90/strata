@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
-import { primaryNav, productsMegaMenu, collectionsMegaMenu } from "@/data/navigation";
+import { primaryNav, productsMegaMenu } from "@/data/navigation";
 import { whatsappHref } from "@/config/site";
 
 interface MobileMenuProps {
@@ -11,6 +11,8 @@ interface MobileMenuProps {
 
 export default function MobileMenu({ open, onClose }: MobileMenuProps) {
   const [expanded, setExpanded] = useState<string | null>(null);
+  const location = useLocation();
+  const isActive = (href: string) => (href === "/" ? location.pathname === "/" : location.pathname.startsWith(href));
 
   const toggle = (label: string) => setExpanded((prev) => (prev === label ? null : label));
 
@@ -34,8 +36,7 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
           <div className="flex-1 overflow-y-auto px-6 pb-10">
             <nav className="flex flex-col divide-y divide-warm-white/10">
               {primaryNav.map((item) => {
-                const hasAccordion = item.label === "Products" || item.label === "Collections";
-                const items = item.label === "Products" ? productsMegaMenu : collectionsMegaMenu;
+                const hasAccordion = item.label === "Products";
 
                 if (!hasAccordion) {
                   return (
@@ -43,7 +44,9 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
                       key={item.label}
                       to={item.href}
                       onClick={onClose}
-                      className="py-4 text-lg font-display"
+                      className={`py-4 text-lg font-display transition-colors duration-300 ${
+                        isActive(item.href) ? "text-clay-light" : "hover:text-clay-light"
+                      }`}
                     >
                       {item.label}
                     </Link>
@@ -55,10 +58,16 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
                   <div key={item.label}>
                     <button
                       onClick={() => toggle(item.label)}
-                      className="flex w-full items-center justify-between py-4 text-lg font-display"
+                      className={`flex w-full items-center justify-between py-4 text-lg font-display transition-colors duration-300 ${
+                        isActive(item.href) ? "text-clay-light" : ""
+                      }`}
                     >
                       {item.label}
-                      <span className={`transition-transform duration-300 ${isOpen ? "rotate-45" : ""}`}>+</span>
+                      <span
+                        className={`text-clay-light transition-transform duration-300 ${isOpen ? "rotate-45" : ""}`}
+                      >
+                        +
+                      </span>
                     </button>
                     <AnimatePresence>
                       {isOpen && (
@@ -70,36 +79,23 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
                           className="overflow-hidden"
                         >
                           <div className="pb-4 pl-2">
-                            {"heading" in (items[0] ?? {}) ? (
-                              (items as typeof productsMegaMenu).map((col) => (
-                                <div key={col.heading} className="mb-4">
-                                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-light mb-2">
-                                    {col.heading}
-                                  </p>
-                                  {col.links.map((l) => (
-                                    <Link
-                                      key={l.label}
-                                      to={l.href}
-                                      onClick={onClose}
-                                      className="block py-1.5 text-sm text-stone-200"
-                                    >
-                                      {l.label}
-                                    </Link>
-                                  ))}
-                                </div>
-                              ))
-                            ) : (
-                              (items as typeof collectionsMegaMenu).map((l) => (
-                                <Link
-                                  key={l.label}
-                                  to={l.href}
-                                  onClick={onClose}
-                                  className="block py-1.5 text-sm text-stone-200"
-                                >
-                                  {l.label}
-                                </Link>
-                              ))
-                            )}
+                            {productsMegaMenu.map((col) => (
+                              <div key={col.heading} className="mb-4">
+                                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-light mb-2">
+                                  {col.heading}
+                                </p>
+                                {col.links.map((l) => (
+                                  <Link
+                                    key={l.label}
+                                    to={l.href}
+                                    onClick={onClose}
+                                    className="block py-1.5 text-sm text-stone-200 transition-colors duration-300 hover:text-clay-light"
+                                  >
+                                    {l.label}
+                                  </Link>
+                                ))}
+                              </div>
+                            ))}
                           </div>
                         </motion.div>
                       )}
@@ -113,7 +109,7 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
               href={whatsappHref()}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-8 inline-flex w-full items-center justify-center gap-2 border border-warm-white/70 px-6 py-4 text-sm font-semibold uppercase tracking-[0.14em]"
+              className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-full bg-clay px-6 py-4 text-sm font-semibold uppercase tracking-[0.14em] text-warm-white transition-colors duration-300 hover:bg-clay-deep"
             >
               Enquire on WhatsApp
             </a>

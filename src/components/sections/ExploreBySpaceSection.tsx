@@ -27,12 +27,12 @@ export default function ExploreBySpaceSection() {
             <p className="eyebrow mb-4">By Application</p>
           </Reveal>
           <Reveal delay={0.08}>
-            <h2 className="text-balance font-barlow text-[2rem] font-bold leading-[1.1] tracking-tight text-ink sm:text-[2.75rem] lg:text-[3.25rem]">
+            <h2 className="text-balance font-barlow text-[31px] font-bold leading-[1.05] tracking-normal text-ink sm:text-[39px]">
               Designed Around Your Space
             </h2>
           </Reveal>
           <Reveal delay={0.16}>
-            <p className="mt-4 max-w-xl text-balance text-[15px] leading-[1.5] text-charcoal-light sm:text-[17px]">
+            <p className="mt-4 max-w-xl text-balance font-albert text-[16px] font-medium leading-[20px] text-charcoal-light sm:text-[18px]">
               Every room asks something different of its surfaces. Explore material stories curated by
               space.
             </p>
@@ -70,7 +70,7 @@ export default function ExploreBySpaceSection() {
           <button
             onClick={prev}
             aria-label="Previous space"
-            className="absolute left-3 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-warm-white text-ink shadow-[0_8px_24px_-6px_rgba(28,27,25,0.35)] transition-transform duration-300 hover:scale-105 sm:left-5 sm:h-12 sm:w-12"
+            className="absolute left-3 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-warm-white text-ink shadow-[0_8px_24px_-6px_rgba(28,27,25,0.35)] transition-all duration-300 hover:scale-105 hover:bg-clay hover:text-warm-white sm:left-5 sm:h-12 sm:w-12"
           >
             <svg viewBox="0 0 24 24" className="h-5 w-5 fill-none stroke-current" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M15 6 9 12l6 6" />
@@ -79,7 +79,7 @@ export default function ExploreBySpaceSection() {
           <button
             onClick={next}
             aria-label="Next space"
-            className="absolute right-3 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-warm-white text-ink shadow-[0_8px_24px_-6px_rgba(28,27,25,0.35)] transition-transform duration-300 hover:scale-105 sm:right-5 sm:h-12 sm:w-12"
+            className="absolute right-3 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-warm-white text-ink shadow-[0_8px_24px_-6px_rgba(28,27,25,0.35)] transition-all duration-300 hover:scale-105 hover:bg-clay hover:text-warm-white sm:right-5 sm:h-12 sm:w-12"
           >
             <svg viewBox="0 0 24 24" className="h-5 w-5 fill-none stroke-current" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M9 6l6 6-6 6" />

@@ -18,7 +18,7 @@ export const spaces: SpaceCategory[] = [
     id: "space-bathrooms",
     name: "Bathrooms",
     image: img.bathroomMarbleVanity,
-    description: "Water-resistant marble, porcelain and quartz surfaces for spa-like bathrooms.",
+    description: "Water-resistant marble, tile and quartz surfaces for spa-like bathrooms.",
   },
   {
     id: "space-commercial",

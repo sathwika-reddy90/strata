@@ -35,27 +35,46 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/35 to-ink/5" />
         <div className="absolute inset-0 bg-ink/10" />
 
+        {/* Floating trust badge — small glass card, independent of the slideshow/text block. */}
+        <motion.div
+          initial={{ opacity: 0, y: -16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.1, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          className="absolute right-6 top-28 z-10 hidden items-center gap-3 rounded-2xl border border-warm-white/20 bg-ink/30 px-5 py-4 backdrop-blur-md sm:right-10 sm:top-32 sm:flex"
+        >
+          <span className="h-9 w-px bg-clay/70" aria-hidden />
+          <div>
+            <p className="font-barlow text-2xl font-bold leading-none text-warm-white">
+              30<span className="text-clay-light">+</span>
+            </p>
+            <p className="mt-1 text-[11px] uppercase tracking-[0.14em] text-stone-300">
+              Years of Craft
+            </p>
+          </div>
+        </motion.div>
+
         {/* Single anchored content block — eyebrow, heading, description, CTAs and
             slide indicators all move together and stay fixed while slides crossfade. */}
         <div className="hero-content absolute inset-x-0 bottom-0 z-10 px-6 pb-10 sm:px-10 sm:pb-12 lg:px-12 lg:pb-14">
-          <div className="max-w-[420px] sm:max-w-[460px] lg:max-w-[500px]">
-            <motion.p
+          <div className="max-w-[480px] sm:max-w-[560px] lg:max-w-[640px]">
+            <motion.div
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.7, ease: "easeOut" }}
-              className="eyebrow mb-4 text-gold-light"
+              className="mb-4 flex items-center gap-3"
             >
-              Premium Surfaces
-            </motion.p>
+              <span className="h-px w-8 bg-clay" aria-hidden />
+              <p className="eyebrow text-gold-light">Premium Surfaces</p>
+            </motion.div>
 
             <h1 className="overflow-hidden">
               <motion.span
                 initial={{ y: "110%" }}
                 animate={{ y: 0 }}
                 transition={{ delay: 0.75, duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-                className="block text-balance font-barlow text-[clamp(2rem,3.2vw,3rem)] font-bold leading-[1.1] tracking-tight text-warm-white"
+                className="block text-balance font-barlow text-[clamp(2.5rem,5.2vw,4.5rem)] font-bold leading-[1.04] tracking-tight text-warm-white"
               >
-                Surfaces That Define Spaces
+                Surfaces That <span className="text-clay-light">Define</span> Spaces
               </motion.span>
             </h1>
 
@@ -63,7 +82,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.05, duration: 0.7, ease: "easeOut" }}
-              className="mt-3 text-balance text-[14px] leading-relaxed text-stone-200/90 sm:text-[15px]"
+              className="mt-4 max-w-md text-balance text-[15px] leading-relaxed text-stone-200/90 sm:text-[16px]"
             >
               Granite, tiles and quartz crafted to bring lasting beauty, character and performance to
               every space.
@@ -76,11 +95,8 @@ export default function Hero() {
             transition={{ delay: 1.3, duration: 0.7, ease: "easeOut" }}
             className="mt-6 flex flex-wrap gap-4"
           >
-            <Button href="/products" variant="inverse">
+            <Button href="/products" variant="primary">
               Explore Products
-            </Button>
-            <Button href="/collections" variant="outlineLight">
-              View Our Collections
             </Button>
           </motion.div>
 
