@@ -6,25 +6,25 @@ export const lookbookSlides: LookbookSlide[] = [
     id: "look-1",
     title: "Minimalist",
     description: "Clean lines, matte finishes and quiet, tonal palettes that let architecture lead.",
-    image: img.livingRoomMinimal,
+    image: img.tileCreamSpeckled,
   },
   {
     id: "look-2",
     title: "Natural & Organic",
     description: "Earthy granite tones and textured tiles that bring the outdoors into everyday spaces.",
-    image: img.livingRoomBright,
+    image: img.naturalStoneSandstoneB,
   },
   {
     id: "look-3",
     title: "Classic & Timeless",
     description: "Veined marble-look surfaces and warm stone for interiors that never date.",
-    image: img.bathroomMarbleDoorway,
+    image: img.naturalStoneLimestonesC,
   },
   {
     id: "look-4",
     title: "Industrial & Urban",
     description: "Concrete-grey quartz and large-format tile for loft-inspired, textural interiors.",
-    image: img.livingRoomGrey,
+    image: img.naturalStoneKotaStoneB,
   },
   {
     id: "look-5",
@@ -36,6 +36,6 @@ export const lookbookSlides: LookbookSlide[] = [
     id: "look-6",
     title: "Contemporary",
     description: "Balanced palettes and large-format tiles for confident, present-day interiors.",
-    image: img.livingRoomNeutral,
+    image: img.tilePacificBlue,
   },
 ];

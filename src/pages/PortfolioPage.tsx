@@ -16,7 +16,7 @@ export default function PortfolioPage() {
         eyebrow="Portfolio"
         title="Our Work"
         description="Selected projects where our granite, tile and quartz surfaces have come to life."
-        image={img.hotelLobbyMarble}
+        image={img.naturalStoneKadapaBlackB}
       />
 
       <section className="py-24 sm:py-28">

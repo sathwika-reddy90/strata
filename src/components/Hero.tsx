@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Button from "./Button";
 import { img } from "@/data/images";
 
-const SLIDES = [img.livingRoomBright, img.livingRoomWarm, img.livingRoomModern];
+const SLIDES = [img.quartzKalingaBrochure, img.graniteSurfacePolished, img.naturalStoneKadapaBlackA];
 const SLIDE_DURATION = 6000;
 
 export default function Hero() {
@@ -26,7 +26,7 @@ export default function Hero() {
             <img
               key={src}
               src={src}
-              alt="Architectural interior finished with premium natural stone surfaces"
+              alt="Strata Surfaces premium quartz, granite and natural stone surfaces"
               className="absolute inset-0 h-full w-full object-cover object-[50%_38%] transition-opacity duration-[1400ms] ease-in-out"
               style={{ opacity: i === active ? 1 : 0 }}
             />

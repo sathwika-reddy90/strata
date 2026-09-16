@@ -5,7 +5,7 @@ export const spaces: SpaceCategory[] = [
   {
     id: "space-living",
     name: "Living Spaces",
-    image: img.livingRoomBright,
+    image: img.naturalStoneSandstoneA,
     description: "Flooring and feature walls that anchor open-plan living areas in warmth and texture.",
   },
   {
@@ -17,25 +17,25 @@ export const spaces: SpaceCategory[] = [
   {
     id: "space-bathrooms",
     name: "Bathrooms",
-    image: img.bathroomMarbleVanity,
+    image: img.quartzCalacattaVein,
     description: "Water-resistant marble, tile and quartz surfaces for spa-like bathrooms.",
   },
   {
     id: "space-commercial",
     name: "Commercial Spaces",
-    image: img.hotelLobbyMarble,
+    image: img.granitePatagonia,
     description: "Durable, statement surfaces for lobbies, offices and hospitality interiors.",
   },
   {
     id: "space-outdoor",
     name: "Outdoor Spaces",
-    image: img.outdoorPoolside,
+    image: img.facadeTravertine,
     description: "Anti-skid, weather-ready stone and tile for terraces, decks and poolside areas.",
   },
   {
     id: "space-facades",
     name: "Facades & Exteriors",
-    image: img.facadeTravertine,
+    image: img.naturalStoneTandurStonesA,
     description: "Cladding-grade granite and stone finishes for building envelopes that endure.",
   },
 ];

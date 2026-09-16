@@ -10,7 +10,7 @@ export const projects: Project[] = [
     materials: ["Alpine Frost Granite", "Cloudmarble Field Tiles"],
     application: "Kitchen Countertops & Living Room Flooring",
     image: img.kitchenGraniteIsland,
-    gallery: [img.kitchenGraniteIsland, img.kitchenGraniteVaulted, img.livingRoomModern],
+    gallery: [img.kitchenGraniteIsland, img.kitchenGraniteVaulted, img.tilesMarbleFinish],
     description:
       "A full-home renovation pairing warm granite countertops with large-format marble-look tiles across open-plan living areas.",
   },
@@ -21,8 +21,8 @@ export const projects: Project[] = [
     category: "Commercial",
     materials: ["Imperial Reserve Quartz", "Grand Format Onyx Tiles"],
     application: "Reception Desk & Lobby Flooring",
-    image: img.hotelLobbyMarble,
-    gallery: [img.hotelLobbyMarble, img.graniteSurfacePolished],
+    image: img.quartzCalacattaVein,
+    gallery: [img.quartzCalacattaVein, img.graniteSurfacePolished],
     description:
       "A statement lobby featuring a book-matched reception desk in premium quartz and large-format tile flooring.",
   },
@@ -33,8 +33,8 @@ export const projects: Project[] = [
     category: "Hospitality",
     materials: ["Bookmatched Calacatta Quartz", "Harbour Stone Outdoor Tiles"],
     application: "Lobby Walls & Poolside Decking",
-    image: img.outdoorPoolside,
-    gallery: [img.outdoorPoolside, img.outdoorPatioStone, img.facadeTravertine],
+    image: img.naturalStoneTandurStonesB,
+    gallery: [img.naturalStoneTandurStonesB, img.naturalStoneSandstoneC, img.facadeTravertine],
     description:
       "A resort-style renovation using book-matched quartz feature walls indoors and anti-skid stone tiles poolside.",
   },
@@ -46,7 +46,7 @@ export const projects: Project[] = [
     materials: ["Pure Frost Quartz", "Steel Cascade Granite"],
     application: "Waterfall Island & Backsplash",
     image: img.kitchenQuartzWaterfall,
-    gallery: [img.kitchenQuartzWaterfall, img.kitchenCountertopA, img.kitchenGraniteSteel],
+    gallery: [img.kitchenQuartzWaterfall, img.quartzKalingaBrochure, img.kitchenGraniteSteel],
     description:
       "A show kitchen built around a dramatic waterfall quartz island with a complementary granite prep counter.",
   },
@@ -57,8 +57,8 @@ export const projects: Project[] = [
     category: "Bathrooms",
     materials: ["Statuario Vein Natural Stone", "Storm Cloud Quartz"],
     application: "Vanity Tops & Wall Cladding",
-    image: img.bathroomMarbleVanity,
-    gallery: [img.bathroomMarbleVanity, img.bathroomHotelMarble, img.bathroomMarbleDoorway],
+    image: img.naturalStoneLimestonesB,
+    gallery: [img.naturalStoneLimestonesB, img.quartzCalacattaVein, img.naturalStoneLimestonesC],
     description:
       "A spa-inspired bathroom suite finished with veined natural stone wall panels and a honed quartz vanity top.",
   },
@@ -70,7 +70,7 @@ export const projects: Project[] = [
     materials: ["Facade Travertine Cladding", "Bedrock Slab Granite"],
     application: "Facade Cladding & Entrance Steps",
     image: img.facadeTravertine,
-    gallery: [img.facadeTravertine, img.graniteBlackImpala],
+    gallery: [img.facadeTravertine, img.granitePatagonia],
     description:
       "A contemporary villa exterior clad in warm travertine-finish stone with matching granite entrance steps.",
   },
@@ -81,8 +81,8 @@ export const projects: Project[] = [
     category: "Residential",
     materials: ["Ashgrey Plank Tiles", "Cloud Nine Quartz"],
     application: "Flooring & Kitchen Countertops",
-    image: img.livingRoomGrey,
-    gallery: [img.livingRoomGrey, img.kitchenCountertopC],
+    image: img.quartzKalingaBrochure,
+    gallery: [img.quartzKalingaBrochure, img.tilesMono],
     description:
       "Wood-look tile flooring throughout, paired with soft matte quartz countertops for a calm, livable palette.",
   },
@@ -94,7 +94,7 @@ export const projects: Project[] = [
     materials: ["Sovereign Onyx Quartz", "Skyline Slab XL Natural Stone"],
     application: "Reception Desk & Executive Floor Cladding",
     image: img.graniteSurfacePolished,
-    gallery: [img.graniteSurfacePolished, img.hotelLobbyMarble],
+    gallery: [img.graniteSurfacePolished, img.naturalStoneKadapaBlackB],
     description:
       "A high-rise office fit-out finished with dark statement quartz surfaces and large-format natural stone cladding.",
   },

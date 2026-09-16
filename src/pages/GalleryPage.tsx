@@ -30,7 +30,7 @@ export default function GalleryPage() {
         eyebrow="Gallery"
         title="Real Spaces. Real Materials."
         description="A closer look at the homes, hotels and workplaces we've helped bring to life."
-        image={img.outdoorPoolside}
+        image={img.granitePatagonia}
       />
 
       <section className="py-24 sm:py-28">

@@ -30,14 +30,14 @@ const tiles: Tile[] = [
     id: "quartz",
     label: "Quartz",
     description: "Engineered surfaces combining sophisticated design with everyday performance.",
-    image: img.kitchenCountertopD,
+    image: img.kitchenQuartzWaterfall,
     href: "/products/quartz",
   },
   {
     id: "natural-stone",
     label: "Natural Stone",
     description: "Natural stone with timeless character, natural variation and distinctive beauty.",
-    image: img.marbleWhiteYule,
+    image: img.naturalStoneKotaStoneA,
     href: "/products/natural-stone",
   },
 ];
