@@ -22,15 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+# These three exceed GitHub's 100MB per-file limit and cannot be
+# committed as normal blobs — see PDF-hosting note in project notes.
 public/pdfs/quartz/KalingaStone - Quartz Brochure 271025.pdf
 public/pdfs/tiles/Glossy 2026 Collection WL.pdf
 public/pdfs/tiles/WB - 300X300-MOROCCAN.pdf
-public/pdfs/tiles/WB-300x300mm-Cadbury Collection.pdf
-public/pdfs/tiles/WB-300x300mm-Louvers Collection.pdf
-public/pdfs/tiles/WB_CROSSY_COLLECTION.pdf
-public/pdfs/tiles/1200X1800- POSHE COLLECTION.pdf
-public/pdfs/tiles/Endless 2026 Collection WL.pdf
-public/pdfs/tiles/GOLD SERIES W.pdf
-public/pdfs/tiles/WB-300X300MM-LUXY COLLECTION.pdf
 .vercel
 .env*
