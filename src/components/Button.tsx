@@ -15,7 +15,7 @@ interface ButtonProps {
 
 const variants = {
   primary:
-    "bg-clay text-warm-white shadow-[0_10px_24px_-8px_rgba(163,24,29,0.5)] hover:bg-clay-deep hover:shadow-[0_14px_30px_-8px_rgba(163,24,29,0.6)]",
+    "bg-clay text-warm-white shadow-[0_10px_24px_-8px_rgba(221,34,39,0.5)] hover:bg-clay-deep hover:shadow-[0_14px_30px_-8px_rgba(221,34,39,0.6)]",
   inverse: "bg-warm-white text-ink shadow-[0_10px_24px_-10px_rgba(28,27,25,0.35)] hover:bg-clay hover:text-warm-white",
   outline: "border border-clay text-clay hover:bg-clay hover:text-warm-white",
   outlineLight: "border border-warm-white/70 text-warm-white hover:bg-warm-white hover:text-clay",

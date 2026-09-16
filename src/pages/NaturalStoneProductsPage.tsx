@@ -80,7 +80,7 @@ export default function NaturalStoneProductsPage() {
                   onClick={() => setActive(label)}
                   className={`rounded-full px-5 py-2.5 text-[13px] font-semibold uppercase tracking-[0.1em] transition-all duration-300 ${
                     isActive
-                      ? "bg-clay text-warm-white shadow-[0_8px_20px_-6px_rgba(163,24,29,0.5)]"
+                      ? "bg-clay text-warm-white shadow-[0_8px_20px_-6px_rgba(221,34,39,0.5)]"
                       : "border border-stone-300 bg-warm-white text-charcoal hover:border-clay hover:text-clay"
                   }`}
                 >
