@@ -38,7 +38,7 @@ export default function Header() {
             scrolled ? "py-2.5 bg-warm-white/92 shadow-[0_8px_30px_-12px_rgba(28,27,25,0.3)]" : "py-3.5 shadow-[0_8px_30px_-14px_rgba(28,27,25,0.18)]"
           }`}
         >
-          <Logo collapseTagline />
+          <Logo />
 
           <nav className="hidden lg:flex items-center gap-8">
             {primaryNav.map((item) => {

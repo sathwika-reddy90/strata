@@ -28,7 +28,7 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
           className="fixed inset-0 z-[60] flex flex-col bg-ink text-warm-white lg:hidden"
         >
           <div className="container-edge flex items-center justify-between py-6">
-            <Logo to={undefined} size="sm" className="text-warm-white" taglineClassName="text-stone-300" />
+            <Logo to={undefined} size="sm" glow />
             <button aria-label="Close menu" onClick={onClose} className="p-2 text-2xl leading-none">
               &times;
             </button>
