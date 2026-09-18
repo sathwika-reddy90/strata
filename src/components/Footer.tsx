@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { footerLinks } from "@/data/navigation";
 import { siteConfig, whatsappHref } from "@/config/site";
+import Logo from "./Logo";
 
 function SocialIcon({ label, path }: { label: string; path: string }) {
   return (
@@ -21,7 +22,7 @@ export default function Footer() {
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-clay to-transparent" />
       <div className="container-edge grid grid-cols-1 gap-12 py-20 sm:grid-cols-2 lg:grid-cols-5">
         <div className="lg:col-span-2">
-          <span className="font-display text-3xl">STRATA</span>
+          <Logo size="lg" className="text-warm-white" taglineClassName="text-stone-300" />
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-stone-200">
             {siteConfig.description}
           </p>

@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { primaryNav, productsMegaMenu } from "@/data/navigation";
 import { whatsappHref } from "@/config/site";
 import MobileMenu from "./MobileMenu";
+import Logo from "./Logo";
 
 type MenuKey = "Products" | null;
 
@@ -37,12 +38,7 @@ export default function Header() {
             scrolled ? "py-2.5 bg-warm-white/92 shadow-[0_8px_30px_-12px_rgba(28,27,25,0.3)]" : "py-3.5 shadow-[0_8px_30px_-14px_rgba(28,27,25,0.18)]"
           }`}
         >
-          <Link to="/" className="flex items-baseline gap-2">
-            <span className="font-display text-xl sm:text-2xl tracking-tight text-ink">STRATA</span>
-            <span className="hidden sm:inline text-[10px] font-semibold uppercase tracking-[0.3em] text-taupe">
-              Surfaces
-            </span>
-          </Link>
+          <Logo collapseTagline />
 
           <nav className="hidden lg:flex items-center gap-8">
             {primaryNav.map((item) => {
