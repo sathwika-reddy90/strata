@@ -1,28 +1,16 @@
-import { useMemo, useState } from "react";
 import SEO from "@/components/SEO";
 import PageHero from "@/components/PageHero";
 import SectionHeading from "@/components/SectionHeading";
-import ProductFilters from "@/components/ProductFilters";
 import ProductGrid from "@/components/ProductGrid";
-import { graniteProducts, graniteSubcategories } from "@/data/granite";
+import { graniteProducts } from "@/data/granite";
 import { img } from "@/data/images";
 
 export default function GraniteProductsPage() {
-  const [active, setActive] = useState<Record<string, string>>({ subcategory: "All" });
-
-  const filtered = useMemo(
-    () =>
-      graniteProducts.filter(
-        (p) => active.subcategory === "All" || p.subcategory === active.subcategory,
-      ),
-    [active],
-  );
-
   return (
     <>
       <SEO
         title="Granite Products"
-        description="Browse natural granite slabs, countertops and flooring — Black, White, Grey, Brown and Premium Granite collections."
+        description="Browse our full range of natural granite slabs for countertops, flooring and cladding."
       />
       <PageHero
         eyebrow="Natural Stone"
@@ -35,17 +23,8 @@ export default function GraniteProductsPage() {
         <div className="container-edge">
           <SectionHeading eyebrow="Full Range" title="Granite Collections" />
 
-          <div className="mt-10">
-            <ProductFilters
-              groups={[{ key: "subcategory", label: "Category", options: [...graniteSubcategories] }]}
-              active={active}
-              onChange={(key, value) => setActive((prev) => ({ ...prev, [key]: value }))}
-              onReset={() => setActive({ subcategory: "All" })}
-            />
-          </div>
-
           <div id="countertops" className="mt-12">
-            <ProductGrid products={filtered} />
+            <ProductGrid products={graniteProducts} />
           </div>
         </div>
       </section>

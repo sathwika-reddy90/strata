@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
-import { primaryNav, productsMegaMenu } from "@/data/navigation";
+import { primaryNav, productsMenu } from "@/data/navigation";
 import { whatsappHref } from "@/config/site";
 import Logo from "./Logo";
 
@@ -80,22 +80,15 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
                           className="overflow-hidden"
                         >
                           <div className="pb-4 pl-2">
-                            {productsMegaMenu.map((col) => (
-                              <div key={col.heading} className="mb-4">
-                                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-light mb-2">
-                                  {col.heading}
-                                </p>
-                                {col.links.map((l) => (
-                                  <Link
-                                    key={l.label}
-                                    to={l.href}
-                                    onClick={onClose}
-                                    className="block py-1.5 text-sm text-stone-200 transition-colors duration-300 hover:text-clay-light"
-                                  >
-                                    {l.label}
-                                  </Link>
-                                ))}
-                              </div>
+                            {productsMenu.map((l) => (
+                              <Link
+                                key={l.label}
+                                to={l.href}
+                                onClick={onClose}
+                                className="block py-2 text-base text-stone-200 transition-colors duration-300 hover:text-clay-light"
+                              >
+                                {l.label}
+                              </Link>
                             ))}
                           </div>
                         </motion.div>

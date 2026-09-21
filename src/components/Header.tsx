@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
-import { primaryNav, productsMegaMenu } from "@/data/navigation";
+import { primaryNav, productsMenu } from "@/data/navigation";
 import { whatsappHref } from "@/config/site";
 import MobileMenu from "./MobileMenu";
 import Logo from "./Logo";
@@ -64,6 +64,30 @@ export default function Header() {
                       }`}
                     />
                   </Link>
+                  <AnimatePresence>
+                    {hasMega && openMenu === "Products" && (
+                      <motion.div
+                        initial={{ opacity: 0, y: -8 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -8 }}
+                        transition={{ duration: 0.22, ease: "easeOut" }}
+                        className="absolute left-0 top-full min-w-full pt-3"
+                      >
+                        <ul className="w-max min-w-full rounded-2xl border border-stone-200/70 bg-warm-white py-2 shadow-2xl">
+                          {productsMenu.map((l) => (
+                            <li key={l.label}>
+                              <Link
+                                to={l.href}
+                                className="block whitespace-nowrap px-5 py-2.5 text-[13px] font-semibold uppercase tracking-[0.14em] text-charcoal transition-colors hover:text-clay"
+                              >
+                                {l.label}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </div>
               );
             })}
@@ -89,42 +113,6 @@ export default function Header() {
             </button>
           </div>
 
-          <AnimatePresence>
-            {openMenu === "Products" && (
-              <motion.div
-                initial={{ opacity: 0, y: -8 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -8 }}
-                transition={{ duration: 0.22, ease: "easeOut" }}
-                className="absolute inset-x-0 top-[calc(100%+12px)] rounded-[28px] border border-stone-200/70 bg-warm-white shadow-2xl"
-              >
-                <div className="grid grid-cols-4 gap-10 px-10 py-10">
-                  {productsMegaMenu.map((col) => (
-                    <div key={col.heading}>
-                      <Link
-                        to={col.href}
-                        className="eyebrow mb-4 block hover:text-ink transition-colors"
-                      >
-                        {col.heading}
-                      </Link>
-                      <ul className="space-y-2.5">
-                        {col.links.map((l) => (
-                          <li key={l.label}>
-                            <Link
-                              to={l.href}
-                              className="text-[15px] text-charcoal-light hover:text-clay transition-colors"
-                            >
-                              {l.label}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  ))}
-                </div>
-              </motion.div>
-            )}
-          </AnimatePresence>
         </motion.div>
       </header>
 
