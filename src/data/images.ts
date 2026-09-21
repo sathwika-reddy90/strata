@@ -135,6 +135,18 @@ export const img = {
   tilesCrossy: "/images/tiles/crossy.jpg",
   tilesGlossy2026: "/images/tiles/glossy-2026.jpg",
   tilesElgres: "/images/tiles/elgres.jpg",
+  tilesCarving: "/images/tiles/carving.webp",
+  tilesCarvingDecor: "/images/tiles/carving-decor.webp",
+  tilesCarvingGolden: "/images/tiles/carving-golden.webp",
+  tilesWoodCarving: "/images/tiles/wood-carving.webp",
+  tilesGhr: "/images/tiles/ghr.webp",
+  tilesGlossyGranula: "/images/tiles/glossy-granula.webp",
+  tilesMattEndless: "/images/tiles/matt-endless.webp",
+  tilesMattMarble: "/images/tiles/matt-marble.webp",
+  tilesMattSpecialColor: "/images/tiles/matt-special-color.webp",
+  tilesMattWood: "/images/tiles/matt-wood.webp",
+  tilesSugar: "/images/tiles/sugar.webp",
+  tilesSugarGranula: "/images/tiles/sugar-granula.webp",
 
   // ---- Quartz brochure thumbnails (extracted from PDF catalogues) ----
   quartzKalingaBrochure: "/images/quartz/kalingastone-brochure.jpg",
