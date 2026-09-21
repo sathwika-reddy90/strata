@@ -6,7 +6,7 @@ const categories = [
   {
     title: "Granite",
     description: "Natural stone with distinctive character, strength and timeless appeal.",
-    image: img.graniteBlackImpala,
+    image: img.graniteBlack,
     href: "/products/granite",
     ctaLabel: "Explore Granite",
   },

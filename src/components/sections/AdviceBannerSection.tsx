@@ -37,8 +37,8 @@ export default function AdviceBannerSection() {
           <div className="overflow-hidden rounded-[28px] sm:rounded-[36px]">
             <div className="relative">
               <img
-                src={img.kitchenGraniteVaulted}
-                alt="A Strata Surfaces granite kitchen installation"
+                src={img.adviceBanner}
+                alt="Advice is always on the house — free design services from Strata Surfaces"
                 className="h-[320px] w-full object-cover sm:h-[380px]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/20 to-transparent" />

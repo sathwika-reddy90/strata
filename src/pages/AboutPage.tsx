@@ -31,7 +31,7 @@ export default function AboutPage() {
         eyebrow="About Strata"
         title="Built on Stone, Guided by Craft"
         description="For nearly two decades, we've helped architects, designers and homeowners choose surfaces that last — not just look good on day one."
-        image={img.graniteSurfacePolished}
+        image={img.graniteGreyWave}
       />
 
       <section className="py-24 sm:py-28">
@@ -63,7 +63,7 @@ export default function AboutPage() {
           <Reveal delay={0.1}>
             <div className="grid grid-cols-2 gap-4">
               <img
-                src={img.kitchenGraniteVaulted}
+                src={img.graniteCharcoalWave}
                 alt="Granite kitchen countertop installation"
                 className="col-span-2 aspect-[16/10] w-full object-cover"
               />

@@ -16,7 +16,7 @@ const tiles: Tile[] = [
     id: "granite",
     label: "Granite",
     description: "Natural stone with distinctive character, strength and timeless appeal.",
-    image: img.graniteSurfacePolished,
+    image: img.graniteGreyWave,
     href: "/products/granite",
   },
   {

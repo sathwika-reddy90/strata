@@ -11,7 +11,7 @@ export default function WhyChooseUsPage() {
         title="Why Choose Us"
         description="From material selection to installation support, here's why architects, designers and homeowners choose Strata Surfaces."
       />
-      <PageHero eyebrow="Why Strata" title="Why Choose Us" image={img.kitchenGraniteWhite} />
+      <PageHero eyebrow="Why Strata" title="Why Choose Us" image={img.graniteWhiteVeined} />
       <WhyChooseUs />
       <CTASection />
     </>

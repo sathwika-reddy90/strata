@@ -8,7 +8,7 @@ const categories = [
   {
     title: "Granite",
     description: "Natural stone with distinctive character, strength and timeless appeal.",
-    image: img.graniteBlackImpala,
+    image: img.graniteBlack,
     href: "/products/granite",
     ctaLabel: "Explore Granite",
   },
@@ -46,7 +46,7 @@ export default function ProductsPage() {
         eyebrow="Our Products"
         title="One Source for Every Surface"
         description="Natural stone, engineered quartz and vitrified tiles — sourced, cut and finished to the same exacting standard."
-        image={img.kitchenGraniteSteel}
+        image={img.graniteCharcoalWave}
       />
 
       <section className="py-24 sm:py-28">

@@ -28,7 +28,7 @@ export default function GraniteProductsPage() {
         eyebrow="Natural Stone"
         title="Natural Granite"
         description="Every slab carries its own character. Discover natural stone selected for beauty, durability and timeless architectural appeal."
-        image={img.graniteSurfacePolished}
+        image={img.graniteGreyWave}
       />
 
       <section id="slabs" className="py-24 sm:py-28">

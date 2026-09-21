@@ -11,7 +11,7 @@ export const spaces: SpaceCategory[] = [
   {
     id: "space-kitchens",
     name: "Kitchens",
-    image: img.kitchenGraniteIsland,
+    image: img.graniteWhiteVeined,
     description: "Countertops and islands built for daily use without compromising on design.",
   },
   {
@@ -23,7 +23,7 @@ export const spaces: SpaceCategory[] = [
   {
     id: "space-commercial",
     name: "Commercial Spaces",
-    image: img.granitePatagonia,
+    image: img.graniteEarthMulti,
     description: "Durable, statement surfaces for lobbies, offices and hospitality interiors.",
   },
   {

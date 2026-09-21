@@ -9,8 +9,8 @@ export const projects: Project[] = [
     category: "Residential",
     materials: ["Alpine Frost Granite", "Cloudmarble Field Tiles"],
     application: "Kitchen Countertops & Living Room Flooring",
-    image: img.kitchenGraniteIsland,
-    gallery: [img.kitchenGraniteIsland, img.kitchenGraniteVaulted, img.tilesMarbleFinish],
+    image: img.graniteWhiteVeined,
+    gallery: [img.graniteWhiteVeined, img.graniteCharcoalWave, img.tilesMarbleFinish],
     description:
       "A full-home renovation pairing warm granite countertops with large-format marble-look tiles across open-plan living areas.",
   },
@@ -22,7 +22,7 @@ export const projects: Project[] = [
     materials: ["Imperial Reserve Quartz", "Grand Format Onyx Tiles"],
     application: "Reception Desk & Lobby Flooring",
     image: img.quartzCalacattaVein,
-    gallery: [img.quartzCalacattaVein, img.graniteSurfacePolished],
+    gallery: [img.quartzCalacattaVein, img.graniteGreyWave],
     description:
       "A statement lobby featuring a book-matched reception desk in premium quartz and large-format tile flooring.",
   },
@@ -46,7 +46,7 @@ export const projects: Project[] = [
     materials: ["Pure Frost Quartz", "Steel Cascade Granite"],
     application: "Waterfall Island & Backsplash",
     image: img.kitchenQuartzWaterfall,
-    gallery: [img.kitchenQuartzWaterfall, img.quartzKalingaBrochure, img.kitchenGraniteSteel],
+    gallery: [img.kitchenQuartzWaterfall, img.quartzKalingaBrochure, img.graniteCharcoalWave],
     description:
       "A show kitchen built around a dramatic waterfall quartz island with a complementary granite prep counter.",
   },
@@ -70,7 +70,7 @@ export const projects: Project[] = [
     materials: ["Facade Travertine Cladding", "Bedrock Slab Granite"],
     application: "Facade Cladding & Entrance Steps",
     image: img.facadeTravertine,
-    gallery: [img.facadeTravertine, img.granitePatagonia],
+    gallery: [img.facadeTravertine, img.graniteEarthMulti],
     description:
       "A contemporary villa exterior clad in warm travertine-finish stone with matching granite entrance steps.",
   },
@@ -93,8 +93,8 @@ export const projects: Project[] = [
     category: "Commercial",
     materials: ["Sovereign Onyx Quartz", "Skyline Slab XL Natural Stone"],
     application: "Reception Desk & Executive Floor Cladding",
-    image: img.graniteSurfacePolished,
-    gallery: [img.graniteSurfacePolished, img.naturalStoneKadapaBlackB],
+    image: img.graniteGreyWave,
+    gallery: [img.graniteGreyWave, img.naturalStoneKadapaBlackB],
     description:
       "A high-rise office fit-out finished with dark statement quartz surfaces and large-format natural stone cladding.",
   },

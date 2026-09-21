@@ -7,6 +7,9 @@
  * photography is available — nothing else in the app needs to change.
  */
 
+/** Granite slab renders: /images/granite/slab-01.webp … slab-40.webp */
+export const graniteSlab = (n: number) => `/images/granite/slab-${String(n).padStart(2, "0")}.webp`;
+
 export const img = {
   // ---- Hero ----
   heroBanner1: "/images/hero/banner1.webp",
@@ -20,6 +23,7 @@ export const img = {
   lookIndustrialUrban: "/images/lookbook/industrial-urban.webp",
 
   // ---- Interiors / lifestyle (Explore by Space, hero, editorial) ----
+  adviceBanner: "/images/interiors/advice-banner.webp",
   livingRoomWarm: "/images/interiors/living-room-warm.jpg",
   livingRoomModern: "/images/interiors/living-room-modern.jpg",
   livingRoomGrey: "/images/interiors/living-room-grey.jpg",
@@ -34,15 +38,12 @@ export const img = {
   facadeModernOne: "/images/interiors/facade-modern-1.jpg",
   facadeModernTwo: "/images/interiors/facade-modern-2.jpg",
 
-  // ---- Granite ----
-  graniteSurfacePolished: "/images/granite/granite-surface-polished.jpg",
-  graniteBlackImpala: "/images/granite/granite-black-impala.jpg",
-  granitePatagonia: "/images/granite/granite-patagonia.jpg",
-  kitchenGraniteIsland: "/images/granite/kitchen-granite-island.jpg",
-  kitchenGraniteVaulted: "/images/granite/kitchen-granite-vaulted.jpg",
-  kitchenGraniteSteel: "/images/granite/kitchen-granite-steel.jpg",
-  kitchenGraniteWhite: "/images/granite/kitchen-granite-white.jpg",
-  kitchenStoneCounters: "/images/granite/kitchen-stone-counters.jpg",
+  // ---- Granite (named picks from the slab set; catalogue uses graniteSlab(n)) ----
+  graniteBlack: graniteSlab(19),
+  graniteWhiteVeined: graniteSlab(28),
+  graniteGreyWave: graniteSlab(5),
+  graniteCharcoalWave: graniteSlab(14),
+  graniteEarthMulti: graniteSlab(9),
 
   // ---- Quartz ----
   kitchenQuartzWaterfall: "/images/quartz/kitchen-quartz-waterfall.jpg",
