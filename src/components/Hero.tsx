@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Button from "./Button";
 import { img } from "@/data/images";
 
-const SLIDES = [img.quartzKalingaBrochure, img.graniteSurfacePolished, img.naturalStoneKadapaBlackA];
+const SLIDES = [img.heroBanner1, img.heroBanner2, img.heroBanner3];
 const SLIDE_DURATION = 6000;
 
 export default function Hero() {

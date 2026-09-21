@@ -9,7 +9,15 @@
 
 export const img = {
   // ---- Hero ----
-  livingRoomBright: "/images/hero/living-room-bright.jpg",
+  heroBanner1: "/images/hero/banner1.webp",
+  heroBanner2: "/images/hero/banner2.webp",
+  heroBanner3: "/images/hero/banner3.webp",
+
+  // ---- Lookbook ----
+  lookMinimalist: "/images/lookbook/minimalist.webp",
+  lookNaturalOrganic: "/images/lookbook/natural-organic.webp",
+  lookClassicTimeless: "/images/lookbook/classic-timeless.webp",
+  lookIndustrialUrban: "/images/lookbook/industrial-urban.webp",
 
   // ---- Interiors / lifestyle (Explore by Space, hero, editorial) ----
   livingRoomWarm: "/images/interiors/living-room-warm.jpg",
