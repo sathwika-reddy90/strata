@@ -13,6 +13,7 @@ import BlogPage from "@/pages/BlogPage";
 import TestimonialsPage from "@/pages/TestimonialsPage";
 import BrandsPage from "@/pages/BrandsPage";
 import WhyChooseUsPage from "@/pages/WhyChooseUsPage";
+import ManufacturingPage from "@/pages/ManufacturingPage";
 import ContactPage from "@/pages/ContactPage";
 import NotFoundPage from "@/pages/NotFoundPage";
 
@@ -33,6 +34,7 @@ export default function App() {
         <Route path="/testimonials" element={<TestimonialsPage />} />
         <Route path="/brands" element={<BrandsPage />} />
         <Route path="/why-choose-us" element={<WhyChooseUsPage />} />
+        <Route path="/manufacturing" element={<ManufacturingPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>

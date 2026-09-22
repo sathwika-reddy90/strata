@@ -21,6 +21,9 @@ export const img = {
   spaceKitchen: "/images/spaces/kitchen.webp",
   spaceBathroom: "/images/spaces/bathroom.webp",
 
+  // ---- Team (placeholder until real photography arrives) ----
+  ownerPortrait: "/images/team/owner.svg",
+
   // ---- Lookbook ----
   lookMinimalist: "/images/lookbook/minimalist.webp",
   lookNaturalOrganic: "/images/lookbook/natural-organic.webp",

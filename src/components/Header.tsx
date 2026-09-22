@@ -40,7 +40,7 @@ export default function Header() {
         >
           <Logo />
 
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-4 xl:gap-6 2xl:gap-8">
             {primaryNav.map((item) => {
               const hasMega = item.label === "Products";
               const isActive =
@@ -53,7 +53,7 @@ export default function Header() {
                 >
                   <Link
                     to={item.href}
-                    className={`relative text-[13px] font-semibold uppercase tracking-[0.14em] transition-colors duration-300 hover:text-clay ${
+                    className={`relative whitespace-nowrap text-[12px] font-semibold uppercase tracking-[0.1em] transition-colors duration-300 hover:text-clay 2xl:text-[13px] 2xl:tracking-[0.14em] ${
                       isActive ? "text-clay" : "text-charcoal"
                     }`}
                   >
@@ -98,7 +98,7 @@ export default function Header() {
               href={whatsappHref()}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden md:inline-flex items-center gap-2 rounded-full bg-clay px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.14em] text-warm-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-clay-deep"
+              className="hidden md:inline-flex lg:hidden xl:inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-clay px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.14em] text-warm-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-clay-deep"
             >
               Enquire Now
             </a>

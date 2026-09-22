@@ -6,6 +6,16 @@ import NumberCounter from "@/components/NumberCounter";
 import CTASection from "@/components/CTASection";
 import { img } from "@/data/images";
 
+// ponytail: dummy copy — swap for the real name, role and bio when supplied
+const owner = {
+  name: "Rajesh Kumar",
+  role: "Founder & Managing Director",
+  bio: [
+    "Rajesh started Sree Balaji Granites & Tiles with a single cutting unit and a conviction that stone should be chosen for the space it lives in, not the price on the slab.",
+    "Three decades on, he still walks the factory floor every week — checking finishes, meeting quarry partners and sitting with architects on the projects that matter most.",
+  ],
+};
+
 const values = [
   { title: "Integrity in Sourcing", description: "We work directly with quarries and manufacturers, so what you see is what gets delivered." },
   { title: "Craft Over Shortcuts", description: "Every slab is checked for consistency before it reaches a client's project." },
@@ -33,6 +43,28 @@ export default function AboutPage() {
         description="For nearly two decades, we've helped architects, designers and homeowners choose surfaces that last — not just look good on day one."
         image={img.graniteGreyWave}
       />
+
+      <section className="border-b border-stone-200 py-20 sm:py-24">
+        <div className="container-edge grid grid-cols-1 gap-12 lg:grid-cols-[260px_1fr] lg:gap-20">
+          <Reveal>
+            <img
+              src={img.ownerPortrait}
+              alt={owner.name}
+              className="h-56 w-56 rounded-full border-4 border-warm-white object-cover shadow-[0_20px_40px_-16px_rgba(28,27,25,0.35)] sm:h-64 sm:w-64"
+            />
+            <h3 className="mt-6 font-barlow text-2xl font-bold text-ink">{owner.name}</h3>
+            <p className="mt-1 text-xs font-semibold uppercase tracking-[0.2em] text-clay">{owner.role}</p>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <SectionHeading eyebrow="Meet the Founder" title="The Person Behind the Stone" />
+            <div className="mt-6 space-y-5 text-base leading-relaxed text-charcoal-light">
+              {owner.bio.map((p) => (
+                <p key={p}>{p}</p>
+              ))}
+            </div>
+          </Reveal>
+        </div>
+      </section>
 
       <section className="py-24 sm:py-28">
         <div className="container-edge grid grid-cols-1 gap-14 lg:grid-cols-2 lg:gap-20">

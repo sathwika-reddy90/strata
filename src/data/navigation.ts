@@ -16,6 +16,7 @@ export const primaryNav: NavLink[] = [
   { label: "Products", href: "/products" },
   { label: "Portfolio", href: "/portfolio" },
   { label: "Resources", href: "/blog" },
+  { label: "Manufacturing", href: "/manufacturing" },
   { label: "Contact", href: "/contact" },
 ];
 
