@@ -34,8 +34,8 @@ export default function Header() {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
           onMouseLeave={() => setOpenMenu(null)}
-          className={`relative mx-auto flex w-full max-w-[1320px] items-center justify-between gap-6 rounded-full border border-stone-200/70 bg-warm-white/80 pl-5 pr-3.5 backdrop-blur-xl transition-all duration-500 sm:pl-6 ${
-            scrolled ? "py-2.5 bg-warm-white/92 shadow-[0_8px_30px_-12px_rgba(28,27,25,0.3)]" : "py-3.5 shadow-[0_8px_30px_-14px_rgba(28,27,25,0.18)]"
+          className={`relative mx-auto flex w-full max-w-[1320px] items-center justify-between gap-6 rounded-full border border-stone-200/70 bg-warm-white/80 pl-5 backdrop-blur-xl transition-all duration-500 sm:pl-6 ${
+            scrolled ? "py-2.5 pr-2.5 bg-warm-white/92 shadow-[0_8px_30px_-12px_rgba(28,27,25,0.3)]" : "py-3.5 pr-3.5 shadow-[0_8px_30px_-14px_rgba(28,27,25,0.18)]"
           }`}
         >
           <Logo />
