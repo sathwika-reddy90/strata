@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Reveal from "../Reveal";
 import { spaces } from "@/data/spaces";
 
-const slides = spaces.slice(0, 3);
+const slides = spaces;
 
 const slideVariants = {
   enter: (direction: number) => ({ x: direction > 0 ? "100%" : "-100%" }),

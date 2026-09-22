@@ -16,6 +16,11 @@ export const img = {
   heroBanner2: "/images/hero/banner2.webp",
   heroBanner3: "/images/hero/banner3.webp",
 
+  // ---- Explore by Space ----
+  spaceHall: "/images/spaces/hall.webp",
+  spaceKitchen: "/images/spaces/kitchen.webp",
+  spaceBathroom: "/images/spaces/bathroom.webp",
+
   // ---- Lookbook ----
   lookMinimalist: "/images/lookbook/minimalist.webp",
   lookNaturalOrganic: "/images/lookbook/natural-organic.webp",
