@@ -95,7 +95,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-warm-white/10">
-        <div className="container-edge grid grid-cols-1 gap-6 py-10 sm:grid-cols-3">
+        <div className="container-edge grid grid-cols-1 gap-8 py-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <h3 className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-light">Contact</h3>
             <a href={siteConfig.phoneHref} className="mt-3 block text-sm text-stone-200 hover:text-warm-white">
@@ -113,27 +113,25 @@ export default function Footer() {
               WhatsApp Us
             </a>
           </div>
-          <div>
-            <h3 className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-light">Address</h3>
-            <p className="mt-3 text-sm leading-relaxed text-stone-200">
-              {siteConfig.address.line1}, {siteConfig.address.line2}
-              <br />
-              {siteConfig.address.city}, {siteConfig.address.state} {siteConfig.address.pincode}
-              <br />
-              {siteConfig.address.country}
-            </p>
-          </div>
-          <div className="flex flex-col justify-between text-sm text-stone-300 sm:items-end sm:text-right">
-            <div className="flex gap-6 sm:justify-end">
-              <a href="#" className="hover:text-warm-white transition-colors">
-                Privacy Policy
-              </a>
-              <a href="#" className="hover:text-warm-white transition-colors">
-                Terms
-              </a>
+          {siteConfig.addresses.map((a) => (
+            <div key={a.label}>
+              <h3 className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-light">{a.label}</h3>
+              <p className="mt-3 text-sm leading-relaxed text-stone-200">
+                {a.lines[0]}
+                <br />
+                {a.lines[1]}
+              </p>
             </div>
-            <p className="mt-4 sm:mt-0">&copy; {new Date().getFullYear()} Strata Surfaces. All rights reserved.</p>
-          </div>
+          ))}
+        </div>
+        <div className="container-edge flex flex-wrap items-center gap-x-6 gap-y-2 border-t border-warm-white/10 py-6 text-sm text-stone-300">
+          <p>&copy; {new Date().getFullYear()} Strata Surfaces. All rights reserved.</p>
+          <a href="#" className="hover:text-warm-white transition-colors">
+            Privacy Policy
+          </a>
+          <a href="#" className="hover:text-warm-white transition-colors">
+            Terms
+          </a>
         </div>
       </div>
     </footer>

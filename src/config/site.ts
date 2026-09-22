@@ -14,14 +14,20 @@ export const siteConfig = {
 
   email: "hello@stratasurfaces.example",
 
-  address: {
-    line1: "Plot 42, Stonecraft Industrial Estate",
-    line2: "Kondapur Main Road",
-    city: "Hyderabad",
-    state: "Telangana",
-    pincode: "500084",
-    country: "India",
-  },
+  addresses: [
+    {
+      label: "Shop",
+      lines: ["Sy No 588/1, Opp. RTA Office, Uppal Kalan", "Rangareddy, Telangana 500039"],
+    },
+    {
+      label: "Godown",
+      lines: ["Plot No 774, Uppal Bhagayath, Uppal", "Hyderabad, Telangana 500039"],
+    },
+    {
+      label: "Factory",
+      lines: ["3-48, Annamatla Village, B.B. Nagar", "Yadadri, Telangana 508115"],
+    },
+  ],
 
   businessHours: [
     { day: "Monday – Saturday", hours: "9:30 AM – 7:30 PM" },

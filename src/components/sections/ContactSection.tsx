@@ -27,14 +27,16 @@ export default function ContactSection() {
               </div>
 
               <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
-                <div>
-                  <h3 className="text-xs font-semibold uppercase tracking-[0.2em] text-taupe">Address</h3>
-                  <p className="mt-3 text-sm leading-relaxed text-charcoal-light">
-                    {siteConfig.address.line1}, {siteConfig.address.line2}
-                    <br />
-                    {siteConfig.address.city}, {siteConfig.address.state} {siteConfig.address.pincode}
-                  </p>
-                </div>
+                {siteConfig.addresses.map((a) => (
+                  <div key={a.label}>
+                    <h3 className="text-xs font-semibold uppercase tracking-[0.2em] text-taupe">{a.label}</h3>
+                    <p className="mt-3 text-sm leading-relaxed text-charcoal-light">
+                      {a.lines[0]}
+                      <br />
+                      {a.lines[1]}
+                    </p>
+                  </div>
+                ))}
                 <div>
                   <h3 className="text-xs font-semibold uppercase tracking-[0.2em] text-taupe">Contact</h3>
                   <a href={siteConfig.phoneHref} className="mt-3 block text-sm text-charcoal-light hover:text-clay">
