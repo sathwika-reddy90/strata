@@ -34,13 +34,13 @@ export default function Header() {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
           onMouseLeave={() => setOpenMenu(null)}
-          className={`relative mx-auto flex w-full max-w-[1320px] items-center justify-between gap-6 rounded-full border border-stone-200/70 bg-warm-white/80 pl-6 pr-3 backdrop-blur-xl transition-all duration-500 sm:pl-8 sm:pr-4 ${
+          className={`relative mx-auto flex w-full max-w-[1320px] items-center justify-between gap-6 rounded-full border border-stone-200/70 bg-warm-white/80 pl-5 pr-3.5 backdrop-blur-xl transition-all duration-500 sm:pl-6 ${
             scrolled ? "py-2.5 bg-warm-white/92 shadow-[0_8px_30px_-12px_rgba(28,27,25,0.3)]" : "py-3.5 shadow-[0_8px_30px_-14px_rgba(28,27,25,0.18)]"
           }`}
         >
           <Logo />
 
-          <nav className="hidden lg:flex items-center gap-4 xl:gap-6 2xl:gap-8">
+          <nav className="hidden lg:flex flex-1 items-center justify-center gap-4 xl:gap-6 2xl:gap-10">
             {primaryNav.map((item) => {
               const hasMega = item.label === "Products";
               const isActive =
@@ -98,7 +98,7 @@ export default function Header() {
               href={whatsappHref()}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden md:inline-flex lg:hidden xl:inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-clay px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.14em] text-warm-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-clay-deep"
+              className="hidden md:inline-flex lg:hidden xl:inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-clay px-6 py-3 text-xs font-semibold uppercase tracking-[0.14em] text-warm-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-clay-deep"
             >
               Enquire Now
             </a>
